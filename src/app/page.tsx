@@ -1,10 +1,10 @@
+import BannerSlider from "@/components/BannerSlider/BannerSlider";
+import Category from "@/components/Category/Category";
+import Course from "@/components/Coursers/Course";
+import FooterCourse from "@/components/FooterCourses/FooterCourse";
+import Search from "@/components/SearchBox/Search";
+import Teacher from "@/components/Teacher/Teacher";
 import Image from "next/image";
-import BannerSlider from "./components/BannerSlider/BannerSlider";
-import Search from "./components/SearchBox/Search";
-import Category from "./components/Category/Category";
-import Course from "./components/Coursers/Course";
-import Teacher from "./components/Teacher/Teacher";
-import FooterCourse from "./components/FooterCourses/FooterCourse";
 
 export default function Home() {
   return (

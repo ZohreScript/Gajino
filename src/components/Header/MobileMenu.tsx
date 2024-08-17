@@ -5,9 +5,9 @@ import Link from "next/link";
 import { pages } from "../../constants/list";
 
 // icons
-import menuIcon from "../../../../public/icons/menuicon.svg";
-import arrowDownIcon from "../../../../public/icons/expand_more.svg";
-import arrowUpIcon from "../../../../public/icons/expandedLess.svg";
+import menuIcon from "../../../public/icons/menuicon.svg";
+import arrowDownIcon from "../../../public/icons/expand_more.svg";
+import arrowUpIcon from "../../../public/icons/expandedLess.svg";
 
 import Image from "next/image";
 

@@ -1,14 +1,14 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
-import artpic from "../../../../public/images/art.png";
-import course from "../../../../public/images/course.png";
-import language from "../../../../public/images/language.png";
-import skill from "../../../../public/images/skill.png";
-import sport from "../../../../public/images/sport.png";
-import tec from "../../../../public/images/tec.png";
-import basketball from "../../../../public/images/basket.png"
-import statue from "../../../../public/images/statue.png"
-import gitar from "../../../../public/images/gitar.png"
+import artpic from "../../../public/images/art.png";
+import course from "../../../public/images/course.png";
+import language from "../../../public/images/language.png";
+import skill from "../../../public/images/skill.png";
+import sport from "../../../public/images/sport.png";
+import tec from "../../../public/images/tec.png";
+import basketball from "../../../public/images/basket.png"
+import statue from "../../../public/images/statue.png"
+import gitar from "../../../public/images/gitar.png"
 import DiscountCard from "./Discount";
 
 const Category = () => {

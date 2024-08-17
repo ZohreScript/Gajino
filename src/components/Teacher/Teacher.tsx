@@ -7,10 +7,10 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
 import Image, { StaticImageData } from "next/image";
-import teacher1 from "../../../../public/images/teacher (1).png";
-import teacher2 from "../../../../public/images/teacher (2).png";
-import teacher3 from "../../../../public/images/teacher (3).png";
-import teacher4 from "../../../../public/images/teacher (4).png";
+import teacher1 from "../../../public/images/teacher (1).png";
+import teacher2 from "../../../public/images/teacher (2).png";
+import teacher3 from "../../../public/images/teacher (3).png";
+import teacher4 from "../../../public/images/teacher (4).png";
 import TeacherCard from "./TeacherCard";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { useRef } from "react";

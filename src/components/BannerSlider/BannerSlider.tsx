@@ -4,8 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
-import slide1 from "../../../../public/images/slide1.png";
-import slide2 from "../../../../public/images/slide2.png";
+import slide1 from "../../../public/images/slide2.png";
+import slide2 from "../../../public/images/slide1.png";
 
 const BannerSlider  = () => {
   return (

@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import programming from "../../../../public/images/programming.png";
-import pastry from "../../../../public/images/pastery.png";
-import speaker from "../../../../public/images/speaker.png";
-import drawing from "../../../../public/images/drawing.png";
+import programming from "../../../public/images/programming.png";
+import pastry from "../../../public/images/pastery.png";
+import speaker from "../../../public/images/speaker.png";
+import drawing from "../../../public/images/drawing.png";
 import FooterCourseCard from "./FooterCourseCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

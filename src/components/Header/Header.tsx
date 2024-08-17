@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Logo from "../../../../public/icons/logo.svg";
-import signup from "../../../../public/icons/signupicon.svg";
+import Logo from "../../../public/icons/logo.svg";
+import signup from "../../../public/icons/signupicon.svg";
 import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
 

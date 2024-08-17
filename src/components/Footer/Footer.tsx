@@ -4,12 +4,9 @@ import Link from "next/link";
 import { IoIosArrowBack, IoMdMail } from "react-icons/io";
 import { GoDotFill } from "react-icons/go";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 
-import Logo from "../../../../public/icons/logo.svg";
+import Logo from "../../../public/icons/logo.svg";
 import Footerlogos from "./Footerlogos";
-import { MdLocationOn } from "react-icons/md";
-import { TiLocation } from "react-icons/ti";
 
 const Footer = () => {
   return (

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { pages } from "../../constants/list";
 import Image from "next/image";
-import arrowDownIcon from "../../../../public/icons/expandDown.svg";
-import arrowUpIcon from "../../../../public/icons/expand_more_secondary.svg";
-import arrowLeftIcon from "../../../../public/icons/arrowLeftIcon.svg";
+import arrowDownIcon from "../../../public/icons/expandDown.svg";
+import arrowUpIcon from "../../../public/icons/expand_more_secondary.svg";
+import arrowLeftIcon from "../../../public/icons/arrowLeftIcon.svg";
 
 const liStyle = "text-sm lg:text-lg py-1 duration-500 ";
 const liActiveStyle = `${liStyle} text-secondary-main bg-purple-100`;

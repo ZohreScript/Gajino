@@ -1,15 +1,15 @@
-import art from "../../../public/icons/art.svg";
-import course from "../../../public/icons/course.svg";
-import language from "../../../public/icons/language.svg";
-import skill from "../../../public/icons/skill.svg";
-import sport from "../../../public/icons/sport.svg";
-import tec from "../../../public/icons/tec.svg";
-import activecourse from "../../../public/icons/courseActive.svg"
-import activeart from "../../../public/icons/artActive.svg"
-import activelanguage from "../../../public/icons/languageactive.svg"
-import activeskill from "../../../public/icons/skillActive.svg"
-import sportactive from "../../../public/icons/sportActive.svg"
-import tecactive from "../../../public/icons/tecActive.svg"
+import art from "../../public/icons/art.svg";
+import course from "../../public/icons/course.svg";
+import language from "../../public/icons/language.svg";
+import skill from "../../public/icons/skill.svg";
+import sport from "../../public/icons/sport.svg";
+import tec from "../../public/icons/tec.svg";
+import activecourse from "../../public/icons/courseActive.svg"
+import activeart from "../../public/icons/artActive.svg"
+import activelanguage from "../../public/icons/languageactive.svg"
+import activeskill from "../../public/icons/skillActive.svg"
+import sportactive from "../../public/icons/sportActive.svg"
+import tecactive from "../../public/icons/tecActive.svg"
 
 
 

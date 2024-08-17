@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import badageAD from "../../../../public/icons/badgeAD.svg";
+import badageAD from "../../../public/icons/badgeAD.svg";
 import { toPersianNumbersInText } from "@/utils/toPersianNumbers";
 
 interface DiscountCardProps {

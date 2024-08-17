@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import gajmag from "../../../../public/images/mag.png";
-import driq from "../../../../public/images/DrIQ New Logo.png";
-import gajmarket from "../../../../public/images/Gaj Marjet English.png";
-import jokar from "../../../../public/images/jokar.png";
-import senfi from "../../../../public/images/senfi.png";
-import majazi from "../../../../public/images/majazi.png";
-import rokh from "../../../../public/images/rokh.png";
-import enamad from "../../../../public/images/namad.png";
+import gajmag from "../../../public/images/mag.png";
+import driq from "../../../public/images/DrIQ New Logo.png";
+import gajmarket from "../../../public/images/Gaj Marjet English.png";
+import jokar from "../../../public/images/jokar.png";
+import senfi from "../../../public/images/senfi.png";
+import majazi from "../../../public/images/majazi.png";
+import rokh from "../../../public/images/rokh.png";
+import enamad from "../../../public/images/namad.png";
 const Footerlogos = () => {
     const firstLogos = [
         { src: gajmag, alt: "Gajmag", href: "#" },

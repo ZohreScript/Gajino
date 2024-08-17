@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import pin from "../../../../public/icons/pin.svg";
-import location from "../../../../public/icons/location.svg";
+import pin from "../../../public/icons/pin.svg";
+import location from "../../../public/icons/location.svg";
 
 const Search = () => {
   return (

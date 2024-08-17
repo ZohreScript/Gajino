@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import basketball from "../../../../public/images/basket.png";
-import statue from "../../../../public/images/statue.png";
-import gitar from "../../../../public/images/gitar.png";
-import paintkids from "../../../../public/images/paintkids.png";
-import frenchln from "../../../../public/images/frenchln.png";
+import basketball from "../../../public/images/basket.png";
+import statue from "../../../public/images/statue.png";
+import gitar from "../../../public/images/gitar.png";
+import paintkids from "../../../public/images/paintkids.png";
+import frenchln from "../../../public/images/frenchln.png";
 import CourseCard from "./CourseCard";
 import { toPersianNumbersInText } from "@/utils/toPersianNumbers";
 import Link from "next/link";
