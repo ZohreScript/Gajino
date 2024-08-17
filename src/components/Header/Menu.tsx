@@ -132,8 +132,8 @@ const Menu = () => {
                          key={subSubPage.id}
                          className="flex w-full p-4 items-center cursor-pointer text-secondary-main font-light"
                        >
-                         <Link href={subSubPage.link}>
-                           <a className="flex items-center w-full">
+                         <Link  href={`/${subSubPage.url}`}>
+                           <div className="flex items-center w-full">
                              {subSubPage.type}
                              <Image
                                src={arrowLeftIcon.src}
@@ -142,7 +142,7 @@ const Menu = () => {
                                height={24}
                                className="mr-2"
                              />
-                           </a>
+                           </div>
                          </Link>
                        </li>
                           ))}
