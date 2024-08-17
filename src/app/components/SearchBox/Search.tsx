@@ -5,8 +5,9 @@ import location from "../../../../public/icons/location.svg";
 
 const Search = () => {
   return (
-    <div className="block w-4/5 md:w-11/12 lg:w-10/12   mx-auto -mt-7 md:bottom-0">
-      <h1 className="block text-white text-sm sm:text-sm md:text-xl font-bold mb-4 text-center">
+    <div className="container mx-auto">
+    <div className="w-full px-8 md:px-6 lg:px-8 xl:px-12">
+      <div className="w-full -mt-7">   <h1 className="block text-white text-sm sm:text-sm md:text-xl font-bold mb-4 text-center">
         دنبال یادگیری چی با کی هستی؟
       </h1>
       <div className="flex flex-col md:flex-row items-center p-7 bg-white rounded-md shadow-md gap-y-4 md:gap-y-0">
@@ -43,6 +44,9 @@ const Search = () => {
         </button>
       </div>
     </div>
+   </div>
+   </div>
+   
   );
 };
 

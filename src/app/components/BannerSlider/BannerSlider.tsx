@@ -10,7 +10,7 @@ import slide2 from "../../../../public/images/slide2.png";
 const BannerSlider  = () => {
   return (
       
-    <div className=" w-full  justify-center   xl:mx-auto">
+    <div className=" w-full max-w-[1920px] mx-auto">
     <Swiper
     spaceBetween={30}
     centeredSlides={true}
