@@ -24,7 +24,7 @@ const BannerSlider  = () => {
     >
       <SwiperSlide className="relative">
         <Image
-          src={slide1.src}
+          src={slide2.src}
           width={1920}
           height={902}
           alt={"slider1.title"}
@@ -32,7 +32,7 @@ const BannerSlider  = () => {
       </SwiperSlide>
       <SwiperSlide className="relative">
       <Image
-          src={slide2.src}
+          src={slide1.src}
           width={1920}
           height={902}
           alt={"slider2.title"}
