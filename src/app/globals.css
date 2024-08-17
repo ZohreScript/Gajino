@@ -49,6 +49,9 @@ body{
 .reverceRtl{
   direction: rtl;
 }
+html, body {
+  overflow-x: hidden;
+}
 .custom-icon {
   stroke-width: 3px; 
 }

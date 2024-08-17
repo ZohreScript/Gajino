@@ -20,7 +20,7 @@ const MobileMenu = () => {
     setOpenSubMenu((prevId) => (prevId === id ? null : id));
 
   return (
-    <>
+    <div >
       <div onClick={toggleMenu} className="cursor-pointer">
         <Image src={menuIcon.src} alt="menu icon" width={24} height={24} />
       </div>
@@ -108,7 +108,7 @@ const MobileMenu = () => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
