@@ -23,7 +23,7 @@ const Footerlogos = () => {
         { src: enamad, alt: "Enamad", href: "#" },
       ];
     return (
-        <div className="flex-1 md:grid md:grid-cols-2 sm:flex-col justify-between  p-6  gap-4 mt-6 w-full">
+        <div className="flex-1 md:grid md:grid-cols-2 sm:flex-col justify-between  px-8  gap-4 mt-6 w-full">
         <div className="grid-cols-2 sm:grid sm:grid-cols-2 md:flex md:flex-row  mb-8 sm:mb-2 md:mb-0 grid gap-14 sm:gap-14 md:gap-6 justify-center items-center">
           {firstLogos.map((logo, index) => (
             <div key={index} className="flex justify-start items-center">
