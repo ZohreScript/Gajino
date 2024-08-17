@@ -8,12 +8,10 @@ import arrowDownIcon from "../../../../public/icons/expandDown.svg";
 import arrowUpIcon from "../../../../public/icons/expand_more_secondary.svg";
 import arrowLeftIcon from "../../../../public/icons/arrowLeftIcon.svg";
 
-// Styling constants
 const liStyle = "text-sm lg:text-lg py-1 duration-500 ";
 const liActiveStyle = `${liStyle} text-secondary-main bg-purple-100`;
 const liHoverStyle = " hover:text-secondary-main";
 
-// Utility function to split array into chunks
 const chunkArray = (array: any[], chunkSize: number) => {
   const chunks = [];
   for (let i = 0; i < array.length; i += chunkSize) {
@@ -103,11 +101,11 @@ const Menu = () => {
                       >
                         <div className="flex items-center justify-start">
                           <Image
-                            src={
-                              activeSubPageId === subPage.id || hoveredSubPageId === subPage.id
-                                ? subPage.activeicon
-                                : subPage.icon
-                            }
+                          src={
+                            activeSubPageId === subPage.id || hoveredSubPageId === subPage.id
+                              ? subPage.activeicon ?? ""  
+                              : subPage.icon ?? "" 
+                          }
                             alt={`${subPage.type} icon`}
                             width={24}
                             height={24}
@@ -130,19 +128,23 @@ const Menu = () => {
                       ).map((subsubPagesChunk, index) => (
                         <ul key={index} className="w-1/2 ">
                           {subsubPagesChunk.map((subSubPage) => (
-                            <li
-                              key={subSubPage.id}
-                              className="flex w-full p-4 items-center cursor-pointer text-secondary-main font-light"
-                            >
-                              {subSubPage.type}
-                              <Image
-                                src={arrowLeftIcon.src}
-                                alt="left arrow"
-                                width={24}
-                                height={24}
-                                className="mr-2"
-                              />
-                            </li>
+                         <li
+                         key={subSubPage.id}
+                         className="flex w-full p-4 items-center cursor-pointer text-secondary-main font-light"
+                       >
+                         <Link href={subSubPage.link}>
+                           <a className="flex items-center w-full">
+                             {subSubPage.type}
+                             <Image
+                               src={arrowLeftIcon.src}
+                               alt="left arrow"
+                               width={24}
+                               height={24}
+                               className="mr-2"
+                             />
+                           </a>
+                         </Link>
+                       </li>
                           ))}
                         </ul>
                       ))}
