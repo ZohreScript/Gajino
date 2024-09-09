@@ -51,7 +51,7 @@ const Category = () => {
   return (
     <div className=" container mx-auto p-8 sm:mt-36 mt-36 md:mt-24">
       {/* Content for categories*/}
-      <div className="grid gap-2  sm:gap-3 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 md:gap-10">
+      <div className="grid gap-2  sm:gap-3 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 md:gap-12">
         {categories.map((category, index) => (
           <CategoryCard
             key={index}
@@ -62,7 +62,7 @@ const Category = () => {
       </div>
 
       {/* content for sale */}
-      <div className="hidden container mx-auto md:grid grid-cols-3 gap-10 mt-20 mb-25">
+      <div className="hidden container mx-auto md:grid grid-cols-3 gap-16 mt-20 mb-25">
         {discountCardData.map((card, index) => (
           <DiscountCard key={index} {...card} />
         ))}
