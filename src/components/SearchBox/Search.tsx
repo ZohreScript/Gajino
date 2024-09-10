@@ -8,7 +8,7 @@ const Search = () => {
     <div className="container mx-auto">
     <div className="w-full px-8 md:px-6 lg:px-8 xl:px-12">
       <div className="w-full -mt-7">  
-         <h1 className="block text-white text-sm sm:text-sm md:text-xl font-bold mb-4 text-center">
+         <h1 className="block text-white md:text-heading-1 text-sm sm:text-sm  font-bold mb-4 text-center">
         دنبال یادگیری چی با کی هستی؟
       </h1>
       <div className="flex flex-col md:flex-row items-center p-7 bg-white rounded-md shadow-md gap-y-4 md:gap-y-0">
@@ -17,7 +17,7 @@ const Search = () => {
        
           <div className="relative w-full mb-4 md:mb-0 flex items-center">
             <span className="absolute inset-y-0 right-3 flex items-center text-teal-500">
-              <Image src={pin.src} width={12} height={12} alt="course name" />
+              <Image src={pin.src} width={16} height={16} alt="course name" />
             </span>
             <input
               type="text"

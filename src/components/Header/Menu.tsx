@@ -46,12 +46,12 @@ const Menu = () => {
     <>
       {openSubMenu !== null && (
         <div
-          className="fixed inset-0 bg-gray-700 bg-opacity-50 z-9 w-full h-full"
+          className="fixed  inset-0 bg-gray-700 bg-opacity-50 z-9 w-full h-full"
           onClick={closeMenus}
         />
       )}
 
-      <ul className="flex items-right font-medium md:gap-x-2 lg:gap-x-4 text-primary-main">
+      <ul className="flex items-right text-lg font-medium md:gap-x-4 lg:gap-x-6 text-primary-main">
         {pages.map((item) => (
           <li
             key={item.id}

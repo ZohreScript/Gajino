@@ -74,29 +74,29 @@ const Teacher = () => {
     <div className="max-w-screen-xl  mx-auto sm:ml-0 md:ml-0 lg:ml-0 ml-0 xl:ml-0 2xl:mx-auto py-10 p-4 pl-0 justify-center">
       <div className="flex  flex-col-reverse lg:flex-row w-full my-2 ">
         {/* Text Section */}
-        <div className=" w-full sm:w-full md:w-3/12 p-1 text-primary-text mb-12 sm:mb-6 md:mb-0 lg:order-1 order-2 lg:text-right text-center">
-          <h2 className="font-bold text-[#42246E] text-xl my-4">
+        <div className=" w-full sm:w-full md:w-3/12 p-1 ml-1 text-primary-text mb-12 sm:mb-6 md:mb-0 lg:order-1 order-2 lg:text-right text-center">
+          <h2 className="font-bold text-[#42246E] text-heading-2 my-4">
             برترین مدرسین
           </h2>
 
-          <p className="line-clamp-5 lg:line-clamp-none">
+          <p className="line-clamp-5 lg:line-clamp-none text-body-1-hero text-[#534667]">
             رتبه مدرسین براساس امتیازی است که فراگیران بعد از هر جلسه به کلاس
             خود میدهند.
           </p>
 
           {/* Slider controls */}
-              <div className=" items-start justify-right gap-4 mt-8 hidden md:flex">
+          <div className=" items-start justify-right gap-4 mt-8 hidden md:flex">
             <div
               className="bg-primary-main p-2 rounded-md cursor-pointer"
               onClick={() => swiperRef.current?.slideNext()} // Trigger next slide
             >
-              <IoIosArrowForward className="fill-white text-lg" />
+              <IoIosArrowForward className="fill-white text-xl" />
             </div>
             <div
-              className="bg-gray-400 p-2 rounded-md cursor-pointer"
+              className="bg-gray-300 p-2 rounded-md cursor-pointer"
               onClick={() => swiperRef.current?.slidePrev()} // Trigger previous slide
             >
-              <IoIosArrowBack className="fill-white text-lg" />
+              <IoIosArrowBack className="fill-white text-xl" />
             </div>
           </div>
         </div>

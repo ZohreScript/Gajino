@@ -33,9 +33,10 @@ function CourseCard({ image, category,session, instructor }: CourseCardProps) {
         </p>
         <div className="flex items-center mb-2 everceRtl">
           <h4 className= "text-primary-main  hidden md:flex font-semibold  items-center">
+          
 
+            <IoIosArrowForward className="fill-primary-main ml-2 custom-icon" size="1rem" />
             مشاهده ویدئوها
-            <IoIosArrowBack className="fill-primary-main ml-2 custom-icon" size="1rem" />
 
           </h4>
           <h4 className= "text-primary-main   md:hidden font-semibold flex items-center">

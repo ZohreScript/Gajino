@@ -34,16 +34,16 @@ const MobileMenu = () => {
       ></div>
 
       <div
-        className={`fixed top-0 right-0 w-[16rem] sm:w-[20rem] bg-white rounded-l-lg shadow-lg duration-700 z-20 ${
+        className={`fixed top-0 right-0 w-[16rem] sm:w-[20rem] bg-white rounded-l-xl shadow-lg duration-700 z-20 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="text-right flex flex-col gap-y-2 min-h-screen  px-4 py-6">
+        <ul className="text-right flex flex-col gap-y-2 min-h-screen justify-start   px-4 py-6">
           {pages.map((item) => (
             <li
               key={item.id}
-              className="text-xs sm:text-sm border-b
-              border-gray-100 pb-3 "
+              className="text-base border-b
+              border-gray-200 pb-3 "
             >
               {item.subPages ? (
                 <div
@@ -56,8 +56,8 @@ const MobileMenu = () => {
                   <Image
                     src={
                       openSubMenu === item.id
-                        ? arrowUpIcon.src
-                        : arrowDownIcon.src
+                        ? arrowDownIcon.src
+                        : arrowUpIcon.src
                     }
                     alt="toggle submenu"
                     width={16}
@@ -90,7 +90,7 @@ const MobileMenu = () => {
                     {item.subPages.map((subItem) => (
                       <li
                         key={subItem.id}
-                        className="duration-500 text-xs sm:text-sm border-b  border-gray-100 pb-2"
+                        className="duration-500 text-base border-b  border-gray-100 pb-2"
                       >
                         <Link
                           href={subItem.url}
@@ -106,6 +106,12 @@ const MobileMenu = () => {
               </div>
             </li>
           ))}
+          <button
+            className="bg-primary-main text-lg w-2/3 text-white py-2 px-2 rounded-lg"
+       
+          >
+            معلم خصوصی شو
+          </button>
         </ul>
       </div>
     </div>

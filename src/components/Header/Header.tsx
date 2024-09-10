@@ -1,18 +1,18 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Logo from "../../../public/icons/logo.svg";
 import signup from "../../../public/icons/signupicon.svg";
 import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
+import SignUp from "@/app/feature/auth/SignUp";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const router = useRouter();
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className="bg-white w-full">
@@ -38,6 +38,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-x-2.5 md:gap-x-[2rem]">
+          {/* signup mobile */}
           <button
             className="py-2 px-4 md:hidden"
             onClick={() => {
@@ -48,24 +49,23 @@ const Header = () => {
           >
             <Image src={signup.src} width={24} height={24} alt="user" />
           </button>
+          {/* signup desktop */}
+          <div className="flex justify-between">
+            <button
+              className="text-primary-main hidden p-2 text-lg font-semibold md:block"
+              onClick={() => {
+                openModal();
+              }}
+            >
+              ورود/ثبت نام
+            </button>
+            <button className="bg-primary-main text-lg p-2 text-white py-2 px-4 rounded-xl hidden md:block">
+              معلم خصوصی شو
+            </button>
+            <SignUp isOpen={isModalOpen} onClose={closeModal} />
+          </div>
 
-          <Link
-            href="/teacher"
-            className="text-primary-main hidden font-semibold md:block"
-          >
-            ورود/ثبت نام
-          </Link>
-
-          <button
-            className="bg-primary-main text-white py-2 px-4 rounded-xl hidden md:block"
-            onClick={() => {
-              localStorage.getItem("phoneNumber")
-                ? router.push("/login")
-                : openModal();
-            }}
-          >
-            معلم خصوصی شو
-          </button>
+          {/* <TeacherRole /> */}
         </div>
       </header>
     </div>

@@ -37,7 +37,7 @@
 @tailwind utilities;
 
 body{
-  background-color: rgba(66, 36, 110, 0.15);
+  background-color: rgba(239, 237, 242);
 }
 * {
   font-family: Shabnam;

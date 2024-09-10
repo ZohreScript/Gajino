@@ -166,9 +166,7 @@ const Footer = () => {
 
         <Footerlogos />
 
-        <div className="text-primary-textLight text-center justify-center text-sm mt-8">
-          تمامی حقوق برای گاج محفوظ است
-        </div>
+
       </div>
     </footer>
   );

@@ -58,7 +58,7 @@ const Course = () => {
         </h1>
 
         {/* Desktop View */}
-        <div className=" grid-rtl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 p-8 mt-10 mb-25 hidden md:grid">
+        <div className=" grid-rtl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-25 hidden md:grid">
           {CourseCardData.map((card, index) => (
             <CourseCard key={index} {...card} />
           ))}
@@ -71,7 +71,7 @@ const Course = () => {
             </p>
             <Link
               href="/"
-              className="bg-primary-main px-5 py-1 rounded-lg mt-4 text-white font-semibold cursor-pointer hover:underline"
+              className="bg-primary-main px-6 py-1 text-lg w-2/3-important rounded-lg mt-4 text-white font-semibold cursor-pointer hover:underline"
             >
               مشاهده تمام ویدئوها
             </Link>

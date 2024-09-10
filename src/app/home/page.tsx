@@ -1,7 +1,6 @@
 import BannerSlider from "@/components/BannerSlider/BannerSlider";
 import Category from "@/components/Category/Category";
 import Course from "@/components/Coursers/Course";
-import FooterCourse from "@/components/FooterCourses/FooterCourse";
 import Search from "@/components/SearchBox/Search";
 import Teacher from "@/components/Teacher/Teacher";
 
@@ -19,7 +18,6 @@ export default function page() {
     <Category />
     <Course />
     <Teacher />
-    <FooterCourse/>
   </div>
 </div>
 </>
