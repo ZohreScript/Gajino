@@ -17,7 +17,7 @@ const Footerlogos = () => {
         { src: enamad, alt: "Enamad", href: "#" },
       ];
     return (
-        <div className="flex-1 md:grid md:grid-cols-2 sm:flex-col justify-between  pl-8 pr-2  gap-4 mt-6 w-full">
+        <div className="flex-1 md:grid md:grid-cols-1 sm:flex-col justify-end  pl-8 pr-2  gap-4 mt-6 w-full">
 
 
         <div className="grid-cols-2 sm:grid sm:grid-cols-2 grid md:flex md:flex-row gap-9 sm:gap-9 md:gap-4 justify-end  md:justify-end sm:justify-center items-center">

@@ -10,7 +10,7 @@ import Footerlogos from "./Footerlogos";
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-10 sm:py-10 pt-28 sm:pt-28 md:pt-48 text-center md:text-right">
+    <footer className="bg-white py-12  text-center md:text-right">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-4">
           <div className="md:col-span-3 font-light flex flex-col gap-y-4 justify-center md:justify-start">
