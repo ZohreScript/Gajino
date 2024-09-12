@@ -4,48 +4,48 @@ import language from "../../public/icons/language.svg";
 import skill from "../../public/icons/skill.svg";
 import sport from "../../public/icons/sport.svg";
 import tec from "../../public/icons/tec.svg";
-import activecourse from "../../public/icons/courseActive.svg"
-import activeart from "../../public/icons/artActive.svg"
-import activelanguage from "../../public/icons/languageactive.svg"
-import activeskill from "../../public/icons/skillActive.svg"
-import sportactive from "../../public/icons/sportActive.svg"
-import tecactive from "../../public/icons/tecActive.svg"
+import activecourse from "../../public/icons/courseActive.svg";
+import activeart from "../../public/icons/artActive.svg";
+import activelanguage from "../../public/icons/languageactive.svg";
+import activeskill from "../../public/icons/skillActive.svg";
+import sportactive from "../../public/icons/sportActive.svg";
+import tecactive from "../../public/icons/tecActive.svg";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-
-
-export interface Category {
+// Define the interface for the third level of pages
+export interface ThirdSubPage {
   id: number;
   type: string;
+  url: string;
+}
+
+// Update the interface for the second level to include third level pages
+export interface SubSubPage {
+  id: number;
+  url: string;
+  type: string;
+  thirdsubPages?: ThirdSubPage[]; // Example of additional nested pages
 }
 
 export interface SubPage {
   id: number;
   type: string;
   url: string;
-  subsubPages?: SubPage[];
-  icon?: string,
-  activeicon?:string,
+  icon?: string;
+  activeicon?: string;
+  subsubPages?: SubSubPage[]; // This is for the second level
 }
 
 export interface Page {
   id: number;
   type: string;
   url: string;
-  icon?: string;
-  activeicon?:string,
-  subPages?: SubPage[]; // Allows for sub-pages
+  icon?: StaticImport | string;
+  activeicon?: string;
+  subPages?: SubPage[]; // This is for the first level
 }
 
-export const categories: Category[] = [
-  { id: 1, type: "مهارت" },
-  { id: 2, type: "درسی" },
-  { id: 3, type: "تکنولوژی" },
-  { id: 4, type: "زبان" },
-  { id: 5, type: "ورزش" },
-  { id: 6, type: "هنر" },
-];
-
-export const pages: Page[] = [
+export const Pages: Page[] = [
   {
     id: 1,
     type: "موضوعات",
@@ -56,9 +56,20 @@ export const pages: Page[] = [
         type: "درسی",
         url: "topics/education",
         icon: course,
-        activeicon:activecourse,
+        activeicon: activecourse,
         subsubPages: [
-          { id: 1, type: "پایه اول", url: "topics/education/grade-1" },
+          {
+            id: 1,
+            type: "پایه اول",
+            url: "topics/education/grade-1",
+            thirdsubPages: [
+              { id: 1, type: "فارسی", url: "topics/education/grade-1/persian" },
+              { id: 2, type: "قرآن", url: "topics/education/grade-1/quran" },
+              { id: 3, type: "علوم", url: "topics/education/grade-1/science" },
+              { id: 4, type: "ریاضی", url: "topics/education/grade-1/math" },
+              { id: 5, type: "نگارش فارسی", url: "topics/education/grade-1/writing" },
+            ],
+          },
           { id: 2, type: "پایه دوم", url: "topics/education/grade-2" },
           { id: 3, type: "پایه سوم", url: "topics/education/grade-3" },
           { id: 4, type: "پایه چهارم", url: "topics/education/grade-4" },
@@ -74,7 +85,7 @@ export const pages: Page[] = [
         type: "زبان",
         url: "topics/language",
         icon: language,
-        activeicon:activelanguage,
+        activeicon: activelanguage,
         subsubPages: [
           { id: 1, type: "انگلیسی", url: "topics/language/english" },
           { id: 2, type: "فرانسوی", url: "topics/language/french" },
@@ -92,8 +103,7 @@ export const pages: Page[] = [
         type: "هنر",
         url: "topics/art",
         icon: art,
-        activeicon:activeart,
-
+        activeicon: activeart,
         subsubPages: [
           { id: 1, type: "گیتار", url: "topics/art/guitar" },
           { id: 2, type: "نقاشی", url: "topics/art/painting" },
@@ -111,8 +121,7 @@ export const pages: Page[] = [
         type: "ورزش",
         url: "topics/sport",
         icon: sport,
-        activeicon:sportactive,
-
+        activeicon: sportactive,
         subsubPages: [
           { id: 1, type: "فوتبال", url: "topics/sport/football" },
           { id: 2, type: "بسکتبال", url: "topics/sport/basketball" },
@@ -130,34 +139,17 @@ export const pages: Page[] = [
         type: "مهارت",
         url: "topics/skill",
         icon: skill,
-        activeicon:activeskill,
-
+        activeicon: activeskill,
         subsubPages: [
           { id: 1, type: "برنامه‌نویسی", url: "topics/skill/programming" },
-          {
-            id: 2,
-            type: "مدیریت پروژه",
-            url: "topics/skill/project-management",
-          },
+          { id: 2, type: "مدیریت پروژه", url: "topics/skill/project-management" },
           { id: 3, type: "تحلیل داده", url: "topics/skill/data-analysis" },
           { id: 4, type: "طراحی UX/UI", url: "topics/skill/ux-ui-design" },
-          {
-            id: 5,
-            type: "بازاریابی دیجیتال",
-            url: "topics/skill/digital-marketing",
-          },
+          { id: 5, type: "بازاریابی دیجیتال", url: "topics/skill/digital-marketing" },
           { id: 6, type: "نوشتن محتوا", url: "topics/skill/content-writing" },
           { id: 7, type: "امنیت سایبری", url: "topics/skill/cyber-security" },
-          {
-            id: 8,
-            type: "مدیریت شبکه",
-            url: "topics/skill/network-management",
-          },
-          {
-            id: 9,
-            type: "مدیریت کسب و کار",
-            url: "topics/skill/business-management",
-          },
+          { id: 8, type: "مدیریت شبکه", url: "topics/skill/network-management" },
+          { id: 9, type: "مدیریت کسب و کار", url: "topics/skill/business-management" },
         ],
       },
       {
@@ -165,32 +157,15 @@ export const pages: Page[] = [
         type: "تکنولوژی",
         url: "topics/technology",
         icon: tec,
-        activeicon:tecactive,
-
+        activeicon: tecactive,
         subsubPages: [
           { id: 1, type: "هوش مصنوعی", url: "topics/technology/ai" },
           { id: 2, type: "بلوک‌چین", url: "topics/technology/blockchain" },
-          {
-            id: 3,
-            type: "رایانش ابری",
-            url: "topics/technology/cloud-computing",
-          },
+          { id: 3, type: "رایانش ابری", url: "topics/technology/cloud-computing" },
           { id: 4, type: "اینترنت اشیاء", url: "topics/technology/iot" },
-          {
-            id: 5,
-            type: "امنیت اطلاعات",
-            url: "topics/technology/information-security",
-          },
-          {
-            id: 6,
-            type: "واقعیت افزوده",
-            url: "topics/technology/augmented-reality",
-          },
-          {
-            id: 7,
-            type: "واقعیت مجازی",
-            url: "topics/technology/virtual-reality",
-          },
+          { id: 5, type: "امنیت اطلاعات", url: "topics/technology/information-security" },
+          { id: 6, type: "واقعیت افزوده", url: "topics/technology/augmented-reality" },
+          { id: 7, type: "واقعیت مجازی", url: "topics/technology/virtual-reality" },
           { id: 8, type: "پایگاه داده", url: "topics/technology/database" },
           { id: 9, type: "شبکه", url: "topics/technology/network" },
         ],

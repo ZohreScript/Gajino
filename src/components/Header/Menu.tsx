@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { pages } from "../../constants/list";
+import { Pages } from "../../constants/list";
 import Image from "next/image";
 import arrowDownIcon from "../../../public/icons/expandDown.svg";
 import arrowUpIcon from "../../../public/icons/expand_more_secondary.svg";
@@ -52,7 +52,7 @@ const Menu = () => {
       )}
 
       <ul className="flex items-right text-lg font-medium md:gap-x-4 lg:gap-x-6 text-primary-main">
-        {pages.map((item) => (
+        {Pages.map((item) => (
           <li
             key={item.id}
             className={`${pathname === `/${item.url}` ? liActiveStyle : liStyle} ${liHoverStyle}`}

@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Logo from "../../../public/icons/logo.svg";
 import signup from "../../../public/icons/signupicon.svg";
-import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
 import SignUp from "@/app/feature/auth/SignUp";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
