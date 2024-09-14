@@ -37,13 +37,13 @@ const MobileMenu: React.FC = () => {
     }
   };
 
-  const handleThirdSubMenuClick = (id: number) => {
-    if (openThirdSubMenu === id) {
-      setOpenThirdSubMenu(null);
-    } else {
-      setOpenThirdSubMenu(id);
-    }
-  };
+  // const handleThirdSubMenuClick = (id: number) => {
+  //   if (openThirdSubMenu === id) {
+  //     setOpenThirdSubMenu(null);
+  //   } else {
+  //     setOpenThirdSubMenu(id);
+  //   }
+  // };
 
   const handleBackToSubSubMenu = () => {
     setOpenThirdSubMenu(null);
@@ -52,7 +52,19 @@ const MobileMenu: React.FC = () => {
   const handleBackToSubMenu = () => {
     setOpenSubSubMenu(null);
   };
+  
+  const [selectedSubSubPage, setSelectedSubSubPage] = useState<string | null>(null);
 
+  const handleThirdSubMenuClick = (id: number, subSubPageType: string) => {
+    if (openThirdSubMenu === id) {
+      setOpenThirdSubMenu(null);
+      setSelectedSubSubPage(null);
+    } else {
+      setOpenThirdSubMenu(id);
+      setSelectedSubSubPage(subSubPageType); // ذخیره نام subsubPage انتخاب‌شده
+    }
+  };
+  
   const currentUrl = typeof window !== "undefined" ? window.location.pathname : "";
 
   return (
@@ -80,15 +92,21 @@ const MobileMenu: React.FC = () => {
                 <FaArrowLeft className="text-primary-text mr-3" />
               </button>
             </div>
+            {selectedSubSubPage && (
+      <div className="text-right p-1 text-primary-text">
+        همه درس‌های {selectedSubSubPage}
+      </div>
+    )}
             <ul className="flex-1 overflow-y-auto">
               {Pages.flatMap((page) =>
                 page.subPages?.flatMap((subPage) =>
                   subPage.subsubPages?.filter((subSubPage) => subSubPage.id === openSubSubMenu)
                     .flatMap((subSubPage) =>
                       subSubPage.thirdsubPages?.map((thirdSubPage) => (
+
                         <li
                           key={thirdSubPage.id}
-                          className="text-base border-b p-4 text-primary-text border-gray-100 pb-2"
+                          className="text-base border-b p-4 text-primary-textLight border-gray-100 pb-2"
                         >
                           <Link
                             href={thirdSubPage.url}
@@ -128,10 +146,10 @@ const MobileMenu: React.FC = () => {
                       >
                         <div
                           className={`flex items-center justify-between rounded-md text-secondary-main cursor-pointer ${openThirdSubMenu === subSubPage.id ? "font-semibold" : "font-normal"}`}
-                          onClick={() => handleThirdSubMenuClick(subSubPage.id)}
+                          onClick={() => handleThirdSubMenuClick(subSubPage.id,subSubPage.type)}
                         >
                       
-                      
+
                           {subSubPage.type}
                           {subSubPage.thirdsubPages && (
                             <IoIosArrowBack className="text-primary-text" />
@@ -164,7 +182,7 @@ const MobileMenu: React.FC = () => {
                     onMouseLeave={() => setHoveredSubPage(null)}
                   >
                     <div
-                      className={`flex items-center justify-between text-secondary-main cursor-pointer ${openSubSubMenu === subPage.id ? "font-semibold" : "font-normal"}`}
+                      className={`flex items-right justify-between text-secondary-main cursor-pointer ${openSubSubMenu === subPage.id ? "font-semibold" : "font-normal"}`}
                       onClick={() => handleSubSubMenuClick(subPage.id)}
                     >
                       <Image
