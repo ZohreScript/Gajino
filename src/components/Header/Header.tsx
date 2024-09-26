@@ -7,6 +7,8 @@ import signup from "../../../public/icons/signupicon.svg";
 import Menu from "./Menu";
 import SignUp from "@/app/feature/auth/SignUp";
 import MobileMenu from "./MobileMenu";
+import TeacherRole from "./TeacherRole";
+import UserRoll from "./UserRoll";
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,7 +18,7 @@ const Header = () => {
 
   return (
     <div className="bg-white w-full">
-      <header className="container mx-auto flex justify-between items-center h-[3.5rem] md:h-[6.5rem] px-4 md:px-8">
+      <header className=" mx-auto flex justify-between items-center h-[3.5rem] md:h-[6.5rem] px-4 md:px-8">
         <div className="md:hidden">
           <MobileMenu />
         </div>
@@ -50,23 +52,24 @@ const Header = () => {
             <Image src={signup.src} width={24} height={24} alt="user" />
           </button>
           {/* signup desktop */}
-          <div className="flex justify-between">
+          {/* <div className="flex justify-between">
             <button
-              className="text-primary-main hidden p-2 text-lg font-semibold md:block"
+              className="text-primary-main hidden p-2 text-sm font-semibold md:block"
               onClick={() => {
                 openModal();
               }}
             >
               ورود/ثبت نام
             </button>
-            <button className="bg-primary-main text-lg p-2 text-white py-2 px-4 rounded-xl hidden md:block">
+            <button className="bg-primary-main text-sm p-2 text-white py-2 px-4 rounded-xl hidden md:block">
               معلم خصوصی شو
             </button>
             <SignUp isOpen={isModalOpen} onClose={closeModal} />
-          </div>
+          </div> */}
 
-          {/* <TeacherRole /> */}
-        </div>
+          {/* <TeacherRole/> */}
+          <UserRoll cartItemCount={5} />
+          </div>
       </header>
     </div>
   );
