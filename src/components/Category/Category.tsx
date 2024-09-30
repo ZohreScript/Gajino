@@ -49,7 +49,7 @@ const Category = () => {
   ];
 
   return (
-    <div className=" container mx-auto p-8 sm:mt-36 mt-36 md:mt-24">
+    <div className=" container mx-auto p-8 sm:mt-6 mt-6 md:mt-16">
       {/* Content for categories*/}
       <div className="grid gap-2  sm:gap-3 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 md:gap-12">
         {categories.map((category, index) => (
