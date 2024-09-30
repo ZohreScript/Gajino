@@ -52,6 +52,7 @@ const Header = () => {
             <Image src={signup.src} width={24} height={24} alt="user" />
           </button>
           {/* signup desktop */}
+
           {/* <div className="flex justify-between">
             <button
               className="text-primary-main hidden p-2 text-sm font-semibold md:block"
@@ -66,7 +67,6 @@ const Header = () => {
             </button>
             <SignUp isOpen={isModalOpen} onClose={closeModal} />
           </div> */}
-
           {/* <TeacherRole/> */}
           <UserRoll cartItemCount={5} />
           </div>

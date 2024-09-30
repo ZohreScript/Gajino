@@ -1,4 +1,4 @@
-// components/MobileMenu/MainMenu.tsx
+//MobileMenu/MainMenu
 import React from "react";
 import Image from "next/image";
 import { Pages, Page, SubPage, SubSubPage, ThirdSubPage } from "../../constants/list";
@@ -68,6 +68,7 @@ const MainMenu: React.FC<MainMenuProps> = ({
                 className={`flex items-center justify-between ${currentUrl.startsWith(item.url) ? "text-primary-main font-semibold" : "text-primary-text font-normal"} cursor-pointer`}
                 onClick={() => handleMenuClick(item)}
               >
+               
                 {('icon' in item) && (
                   <Image
                     src={currentUrl.startsWith(item.url) && 'activeicon' in item ? (item as SubPage).activeicon || (item as SubPage).icon : (item as SubPage).icon || menuIcon.src}

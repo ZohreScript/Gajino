@@ -61,7 +61,7 @@ const MobileMenu: React.FC = () => {
       setSelectedSubSubPage(null);
     } else {
       setOpenThirdSubMenu(id);
-      setSelectedSubSubPage(subSubPageType); // ذخیره نام subsubPage انتخاب‌شده
+      setSelectedSubSubPage(subSubPageType); 
     }
   };
   
@@ -185,17 +185,18 @@ const MobileMenu: React.FC = () => {
                       className={`flex items-right justify-between text-secondary-main cursor-pointer ${openSubSubMenu === subPage.id ? "font-semibold" : "font-normal"}`}
                       onClick={() => handleSubSubMenuClick(subPage.id)}
                     >
+                      <div className="flex">
                       <Image
                         src={openSubSubMenu === subPage.id || hoveredSubPage === subPage.id
-                          ? subPage.activeicon ?? "/path/to/default-icon.svg"
-                          : subPage.icon ?? "/path/to/default-icon.svg"
+                          ? subPage.activeicon ?? ""
+                          : subPage.icon ?? ""
                         }
                         alt={`${subPage.type} icon`}
                         width={20}
                         height={20}
-                        className="mr-2"
+                        className="mx-2"
                       />
-                      {subPage.type}
+                      {subPage.type}</div>
                       {subPage.subsubPages && (
                         <IoIosArrowBack className="text-primary-text" />
                       )}
