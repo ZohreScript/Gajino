@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import pinIcon from "../../../public/icons/pin.svg";
 import locationIcon from "../../../public/icons/location.svg";
+import SearchFilter from "./SearchFilter";
 
 interface SearchBoxProps {
   query: string;
@@ -10,6 +11,7 @@ interface SearchBoxProps {
   setCity: (value: string) => void;
   handleSearch: () => void;
   setShowResults: (value: boolean) => void;
+  showFilters?: boolean;  // Prop برای نمایش فیلترها
 }
 
 const SearchBox: React.FC<SearchBoxProps> = ({
@@ -19,6 +21,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   setCity,
   handleSearch,
   setShowResults,
+  showFilters = false,  // مقدار پیش‌فرض false است
 }) => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-y-4 md:gap-y-0">
@@ -53,6 +56,9 @@ const SearchBox: React.FC<SearchBoxProps> = ({
             onChange={(e) => setCity(e.target.value)}
           />
         </div>
+      {showFilters && (
+    <SearchFilter/>
+      )}
       </div>
       <button
         className="bg-primary-main text-white mr-0 md:mr-4 px-6 py-2 w-full md:w-auto rounded-md mt-2 md:mt-0"
@@ -60,6 +66,8 @@ const SearchBox: React.FC<SearchBoxProps> = ({
       >
         جستجو
       </button>
+
+  
     </div>
   );
 };

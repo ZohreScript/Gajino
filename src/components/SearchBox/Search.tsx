@@ -42,6 +42,7 @@ const Search: React.FC = () => {
                   handleSearch={handleSearch}
                   setShowResults={setShowResults}
                 />
+
                 {/* Search Results */}
                 {query && <SearchResults query={query} city={city} />}
               </div>

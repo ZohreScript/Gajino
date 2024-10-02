@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import teacherIcon from "../../../public/icons/teacher.svg";
 import coursesicon from "../../../public/icons/courses.svg";
-import locationIcon from "../../../public/icons/location.svg";
 import tagicon from "../../../public/icons/tag.svg";
+import locationIcon from "../../../public/icons/location.svg";
 import { GoDotFill } from "react-icons/go";
 
 interface SearchResultsProps {
