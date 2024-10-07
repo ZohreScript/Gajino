@@ -174,5 +174,5 @@ export const Pages: Page[] = [
   },
   { id: 2, type: "درباره ما", url: "about-us" },
   { id: 3, type: "تماس با ما", url: "contact-us" },
-  { id: 4, type: "سوالات متداول", url: "fq" },
+  { id: 4, type: "سوالات متداول", url: "faq" },
 ];

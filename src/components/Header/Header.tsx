@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Logo from "../../../public/icons/logo.svg";
 import signup from "../../../public/icons/signupicon.svg";
 import Menu from "./Menu";
-import SignUp from "@/app/feature/auth/SignUp";
+import SignUp from "@/feature/auth/SignUp";
 import MobileMenu from "./MobileMenu";
 import TeacherRole from "./TeacherRole";
 import UserRoll from "./UserRoll";

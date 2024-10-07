@@ -8,10 +8,8 @@ export default function page() {
     return (
     <>
 <BannerSlider />
-<div className="absolute inset-x-0  flex justify-center z-10">
-  <div className="relative sm:top-[20%] md:top-[80%] -translate-y-1/3 md:-translate-y-1/2 w-full  ">
-    <Search />
-  </div>
+<div className=" inset-x-0 flex justify-center z-10 relative sm:top-[20%] md:top-[80%] -translate-y-1/3 md:-translate-y-1/2 w-full">
+  <Search />
 </div>
 <div className="w-full">
   <div className="container max-w-full xl:max-w-1440 mx-auto py-8 space-y-8">

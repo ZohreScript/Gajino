@@ -63,7 +63,7 @@ const SearchInfo = () => {
 
       {/* Search  Card */}
       <div className="container mx-auto bg-white shadow-lg rounded-lg p-6 md:flex flex-row justify-between items-center gap-6 mb-4">
-        <div className="md:w-1/5 w-full gride gride-rows-1">
+        <div className="md:w-1/5 w-full gride grid-rows-1">
           <div className="relative md:w-64 md:h-64 w-12 h-12 rounded-full overflow-hidden">
             <Image
               src={teacher1.src}
@@ -162,7 +162,7 @@ const SearchInfo = () => {
           لورم ایپسوم متن ساختگی لورم ایپسوم متن ساختگی
         </p>
       </div>
-    </div>
+      </div>
 
           <div className="row-span-1 hidden md:block"></div>
           <div className="flex flex-col items-center row-span-1 justify-center md:mt-8">

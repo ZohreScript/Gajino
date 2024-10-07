@@ -9,7 +9,7 @@ import arrowUpIcon from "../../../public/icons/expand_more_secondary.svg";
 import arrowLeftIcon from "../../../public/icons/arrowLeftIcon.svg";
 
 const liStyle = "text-sm lg:text-lg py-1 duration-500 ";
-const liActiveStyle = `${liStyle} text-secondary-main bg-purple-100`;
+const liActiveStyle = `${liStyle} text-secondary-main`;
 const liHoverStyle = " hover:text-secondary-main";
 
 const chunkArray = (array: any[], chunkSize: number) => {
