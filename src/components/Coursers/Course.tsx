@@ -53,7 +53,7 @@ const Course = () => {
   return (
     <div className="w-full bg-white text-white py-8 mb-60">
       <div className="container mx-auto pr-4">
-        <h1 className="text-2xl text-secondary-main text-center justify-center font-bold  md:my-2 mb-8">
+        <h1 className="text-2xl text-MokhDarkBlue text-center justify-center font-bold  md:my-2 mb-8">
           برترین ویدئوهای آموزشی
         </h1>
 
@@ -63,15 +63,15 @@ const Course = () => {
             <CourseCard key={index} {...card} />
           ))}
           <div className="flex flex-col items-center justify-center">
-            <h2 className="text-7xl font-bold text-secondary-main mb-4  after:content-[''] after:block after:h-[4px] after:w-[110%] after:bg-primary-main after:mx-auto">
+            <h2 className="text-7xl font-bold text-MokhDarkBlue mb-4  after:content-[''] after:block after:h-[4px] after:w-[110%] after:bg-MokhBlue after:mx-auto">
               + {toPersianNumbersInText("218")}
             </h2>
-            <p className="text-lg text-secondary-main mb-2">
+            <p className="text-lg text-MokhDarkBlue mb-2">
               ویدئو با موضوعات مختلف
             </p>
             <Link
               href="/"
-              className="bg-primary-main px-6 py-1 text-lg w-2/3-important rounded-lg mt-4 text-white font-semibold cursor-pointer hover:underline"
+              className="bg-MokhBlue px-6 py-1 text-lg w-2/3-important rounded-lg mt-4 text-white font-semibold cursor-pointer hover:underline"
             >
               مشاهده تمام ویدئوها
             </Link>
@@ -104,15 +104,15 @@ const Course = () => {
           </Swiper>
 
           <div className="mt-12 text-center">
-            <h3 className="relative text-7xl font-bold text-secondary-main mb-4  after:content-[''] after:block after:h-[4px] after:w-[60%] after:bg-primary-main after:mx-auto">
+            <h3 className="relative text-7xl font-bold text-MokhDarkBlue mb-4  after:content-[''] after:block after:h-[4px] after:w-[60%] after:bg-MokhBlue after:mx-auto">
               {toPersianNumbersInText("218")} +
             </h3>
-            <p className="text-secondary-main font-medium mb-8">
+            <p className="text-MokhDarkBlue font-medium mb-8">
               ویدئو با موضوعات مختلف
             </p>
             <Link
               href="#"
-              className="  flex items-center mx-auto justify-center w-1/2 px-2 py-2 text-white bg-primary-main rounded-lg shadow-lg"
+              className="  flex items-center mx-auto justify-center w-1/2 px-2 py-2 text-white bg-MokhBlue rounded-lg shadow-lg"
             >
               <IoIosArrowForward className="fill-white ml-2 strock-4" />
               مشاهده تمام ویدئوها

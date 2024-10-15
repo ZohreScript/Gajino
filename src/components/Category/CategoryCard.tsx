@@ -14,7 +14,7 @@ function CategoryCard({ image, title }: CategoryCardProps) {
         <div className="absolute inset-0 bg-[#42246E] opacity-40 z-10"></div>
       </div>
       <div className="p-2 md:p-4 text-center">
-        <h3 className="text-sm md:text-lg text-primary-text font-semibold">{title}</h3>
+        <h3 className="text-sm md:text-lg text-MokhFont1 font-semibold">{title}</h3>
       </div>
     </div>
   );

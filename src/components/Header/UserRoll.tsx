@@ -33,7 +33,7 @@ const UserRoll: React.FC<CartProps> = ({ cartItemCount }) => {
             />
             <button
               onClick={toggleDropdown}
-              className="flex items-center text-primary-main cursor-pointer"
+              className="flex items-center text-MokhBlue cursor-pointer"
             >
               بهرام موسوی راد
               <IoIosArrowDown
@@ -47,19 +47,19 @@ const UserRoll: React.FC<CartProps> = ({ cartItemCount }) => {
 
           {dropdownOpen && (
             <ul className="absolute right-0 mt-2 w-48 text-sm bg-white shadow-md rounded-lg z-10">
-              <li className="flex items-center px-4 py-3 text-primary-textLight hover:bg-[#ECEAEF] hover:rounded-t-lg hover:text-primary-text">
+              <li className="flex items-center px-4 py-3 text-MokhFont2 hover:bg-[#ECEAEF] hover:rounded-t-lg hover:text-MokhFont1">
                 <IoMdNotifications size={20} className="ml-2" />
                 <Link href="#" className="flex-1 pr-1">
                   اعلانات
                 </Link>
               </li>
-              <li className="flex items-center px-4 py-3 text-primary-textLight hover:bg-[#ECEAEF] hover:text-primary-text">
+              <li className="flex items-center px-4 py-3 text-MokhFont2 hover:bg-[#ECEAEF] hover:text-MokhFont1">
                 <FaUser size={18} className="ml-2" />
                 <Link href="#" className="flex-1 pr-1">
                   پنل کاربری من
                 </Link>
               </li>
-              <li className="flex items-center px-4 py-3 text-primary-textLight hover:bg-[#ECEAEF] hover:rounded-b-lg hover:text-primary-text">
+              <li className="flex items-center px-4 py-3 text-MokhFont2 hover:bg-[#ECEAEF] hover:rounded-b-lg hover:text-primary-text">
                 <IoLogOut size={20} className="ml-2" />
                 <Link href="#" className="flex-1 pr-1">
                   خروج از حساب کاربری
@@ -69,7 +69,7 @@ const UserRoll: React.FC<CartProps> = ({ cartItemCount }) => {
           )}
         </div>
         
-        <div className="border-r-2 border-primary-textLight/70 h-8 mx-2"></div>
+        <div className="border-r-2 border-MokhFont2/70 h-8 mx-2"></div>
 
         <div className="flex items-center">
           <div className="relative">
@@ -82,7 +82,7 @@ const UserRoll: React.FC<CartProps> = ({ cartItemCount }) => {
             />
             
             {cartItemCount > 0 && (
-              <span className="absolute -top-2 -right-1 bg-red-500 text-white text-xs border border-white font-bold rounded-full w-5 h-5 text-center flex items-center justify-center">
+              <span className="absolute -top-2 -right-1 bg-red-500 text-white text-xs border border-white font-bold rounded-full w-6 h-6 text-center leading-none pt-1 flex items-center justify-center">
                 {cartItemCount}
               </span>
             )}

@@ -145,26 +145,31 @@ const fontTailwind: CustomFontType = {
 };
 
 
+const flowbite = require("flowbite-react/tailwind");
 
 const config: Config = {
   content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          main: '#29AFBD',   
-          text: '#534667',  
-          textLight:'#9689A8',
-
-        },
-        secondary:{
-          main:'#42246E',
-          light :'#9689A8'
-        },
+        MokhYellow:'#F7A506',
+        MokhDarkBlue:'#42246E',
+        MokhBlue :'#29AFBD',
+        MokhBlueHover :'#54BFCA',
+        MokhBlueActive :'#218F99',
+        MokhLemon:' #FFDD6F',
+        MokhPink:' #FF005C',
+        MokhFont1:'#534667',
+        MokhFont2:'#9689A8',
+        MokhFont3:'#B6ADC2',
+        MokhWhite1:'#CCC6D5',
+        MokhWhite2:'#ECEAEF',
+    
         screens: {
           'xl': '1440px',
         },
@@ -174,6 +179,7 @@ const config: Config = {
         width: {
           '2/3-important': '66.6667% !important',
         },
+  
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -181,8 +187,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
-    // fontSize: fontTailwind,
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin(), ],
 };
 export default config;

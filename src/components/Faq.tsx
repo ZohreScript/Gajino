@@ -37,10 +37,10 @@ const Faq: React.FC = () => {
   return (
     <div className="min-h-screen flex justify-center py-8 px-4">
       <div className="w-full max-w-4xl">
-        <h2 className="text-2xl font-bold text-center mb-2 text-secondary-main">
+        <h2 className="text-2xl font-bold text-center mb-2 text-MokhDarkBlue">
           سوالات متداول
         </h2>
-        <p className="text-secondary-main justify-center mb-4 items-center text-center">
+        <p className="text-MokhDarkBlue justify-center mb-4 items-center text-center">
           اگر سوالی در خصوص پلتفرم مخ دارید در این صفحه سعی کردیم به سوالات شما
           پاسخ دهیم
         </p>
@@ -54,25 +54,25 @@ const Faq: React.FC = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex text-sm md:text-lg justify-between items-center py-4 px-6 text-right  font-medium text-primary-text"
+                className="w-full flex text-sm md:text-lg justify-between items-center py-4 px-6 text-right  font-medium text-MokhFont1"
               >
                 <span
                   className={`${
                     activeIndex === index
-                      ? "text-primary-main"
-                      : "text-primary-text"
+                      ? "text-MokhBlue"
+                      : "text-MokhFont1"
                   } flex-1`}
                 >
                   {faq.question}
                 </span>
                 <FaChevronDown
-                  className={`transition-transform text-primary-main duration-300  sm:text-sm md:text-xl flex-shrink-0 ${
+                  className={`transition-transform text-MokhBlue duration-300  sm:text-sm md:text-xl flex-shrink-0 ${
                     activeIndex === index ? "transform rotate-180" : ""
                   }`}
                 />
               </button>
               {activeIndex === index && (
-                <div className="px-6 py-4 border-t border-gray-200 text-primary-textLight text-sm">
+                <div className="px-6 py-4 border-t border-gray-200 text-MokhFont1Light text-sm">
                   {faq.answer}
                 </div>
               )}

@@ -27,7 +27,7 @@ const Page = () => {
             افراد می‌توانند با بروزرسانی مداوم رزومه خود، آمادگی بیشتری برای
             فرصت‌های شغلی جدید داشته باشند.
           </p>
-          <ul className="list-disc px-4 marker:text-primary-main space-y-1">
+          <ul className="list-disc px-4 marker:text-MokhBlue space-y-1">
             <li>مورد ۱</li>
             <li>مورد ۲</li>
             <li>مورد ۳</li>
@@ -40,28 +40,28 @@ const Page = () => {
         <div className="relative z-30 bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-10 max-w-xl sm:max-w-2xl lg:max-w-7xl w-full flex flex-col md:flex-row items-start justify-between space-y-4 sm:space-y-0">
           <div className="w-full md:w-2/3 flex flex-col h-full">
             <div>
-              <p className="text-lg font-medium text-primary-main mb-4">ارتباط با ما</p>
-              <h2 className="text-lg sm:text-xl font-bold text-secondary-main mb-4 sm:mb-7">
+              <p className="text-lg font-medium text-MokhBlue mb-4">ارتباط با ما</p>
+              <h2 className="text-lg sm:text-xl font-bold text-MokhDarkBlue mb-4 sm:mb-7">
                 چطور میتوانیم کمکتون کنیم؟
               </h2>
-              <p className="text-secondary-main font-medium mb-4">
+              <p className="text-MokhDarkBlue font-medium mb-4">
                 در فرم ارسال پیام، پیامتون رو با ما در میان بذارید یا از راه‌های زیر با ما در ارتباط باشید.
               </p>
             </div>
 
             <div className="md:block hidden mb-16"></div>
 
-            <div className="mb-4 text-primary-textLight space-y-5">
+            <div className="mb-4 text-MokhFont2 space-y-5">
               <div className="flex items-center gap-2">
-                <IoMdMail className="text-xl text-primary-main" />
+                <IoMdMail className="text-xl text-MokhBlue" />
                 <p className="text-sm">info@gajino.com</p>
               </div>
               <div className="flex items-center gap-2">
-                <IoCall className="text-xl text-primary-main" />
+                <IoCall className="text-xl text-MokhBlue" />
                 <p className="text-sm">۰۲۱-۶۶۴۳۶۰۰۰</p>
               </div>
               <div className="flex items-center gap-2">
-                <FaLocationDot className="text-xl text-primary-main" />
+                <FaLocationDot className="text-xl text-MokhBlue" />
                 <p className="text-sm">
                   تهران، کیلومتر ۱۴ جاده مخصوص، بلوار ایران خودرو نرسیده به فتح، پلاک ۲
                 </p>
@@ -71,7 +71,7 @@ const Page = () => {
 
           <form className="w-full md:w-1/3 space-y-4 flex flex-col justify-start">
             <div>
-              <label className="block text-sm font-medium text-primary-textLight">
+              <label className="block text-sm font-medium text-MokhFont2">
                 نام و نام خانوادگی
               </label>
               <input
@@ -81,7 +81,7 @@ const Page = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-primary-textLight">
+              <label className="block text-sm font-medium text-MokhFont2">
                 آدرس ایمیل
               </label>
               <input
@@ -91,7 +91,7 @@ const Page = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-primary-textLight">
+              <label className="block text-sm font-medium text-MokhFont2">
                 پیام
               </label>
               <textarea
@@ -102,7 +102,7 @@ const Page = () => {
             </div>
             <button
               type="submit"
-              className="w-full mt-6 py-2 px-4 bg-primary-main text-white font-semibold rounded-xl"
+              className="w-full mt-6 py-2 px-4 bg-MokhBlue text-white font-semibold rounded-xl"
             >
               ارسال پیام
             </button>

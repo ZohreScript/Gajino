@@ -54,18 +54,18 @@ const MainMenu: React.FC<MainMenuProps> = ({
         <ul className="text-right flex flex-col gap-y-2 min-h-screen justify-start px-4 py-6">
           {menuPath.length > 0 && (
             <button
-              className="flex border-b border-b-gray-200 pb-3 items-center justify-end text-base font-semibold text-primary-text cursor-pointer mb-2"
+              className="flex border-b border-b-gray-200 pb-3 items-center justify-end text-base font-semibold text-MokhFont1 cursor-pointer mb-2"
               onClick={handleBackClick}
             >
               بازگشت
-              <FaArrowLeft className="text-primary-text mr-3" />
+              <FaArrowLeft className="text-MokhFont1 mr-3" />
             </button>
           )}
 
           {currentLevelItems.map((item) => (
             <li key={item.id} className="text-base border-b border-gray-200 pb-3">
               <div
-                className={`flex items-center justify-between ${currentUrl.startsWith(item.url) ? "text-primary-main font-semibold" : "text-primary-text font-normal"} cursor-pointer`}
+                className={`flex items-center justify-between ${currentUrl.startsWith(item.url) ? "text-MokhBlue font-semibold" : "text-MokhFont1 font-normal"} cursor-pointer`}
                 onClick={() => handleMenuClick(item)}
               >
                
@@ -91,7 +91,7 @@ const MainMenu: React.FC<MainMenuProps> = ({
             </li>
           ))}
 
-          <button className="bg-primary-main text-lg w-2/3 text-white py-2 px-2 rounded-lg">
+          <button className="bg-MokhBlue text-lg w-2/3 text-white py-2 px-2 rounded-lg">
             معلم خصوصی شو
           </button>
         </ul>

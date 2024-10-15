@@ -25,10 +25,10 @@ const Page = () => {
         <div className="relative -mt-10 mb-10 mx-4 sm:mx-6 lg:mx-10 z-30 bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:p-10 max-w-xl sm:max-w-2xl lg:max-w-7xl w-full flex flex-col md:flex-row items-start justify-between space-y-4 sm:space-y-0">
           <div className="w-full flex flex-col h-full">
             <div>
-              <h2 className="text-lg text-right font-bold text-secondary-main mb-1 sm:mb-4">
+              <h2 className="text-lg text-right font-bold text-MokhDarkBlue mb-1 sm:mb-4">
                 تعاریف و اصلاحات
               </h2>
-              <p className="text-primary-text mb-12 text-right">
+              <p className="text-MokhFont1 mb-12 text-right">
                 .دشاب یم نآ یاوتحم و ونیجاگ نشیکیلپا یونعم و یدام تیکلام قوقح هیلک یاراد هک جاگ یللملا نیب تاراشتنا : جاگ
                 .ناربراک هب فلتخم قرط هب جاگ یللملا نیب تاراشتنا یشزومآ یوتحم هئارا و طابترا تهج یرازفا مرن رتسب و ونیجاگ نشیکیلپا : ونیجاگ
                 .دیامن یم مادقا تامدخ تفایرد هب تبسن ونیجاگ نشیکیلپا زا هدافتسا اب و تنرتنیا یطابترا رتسب قیرط زا هک دشاب یم یقوقح ای یقیقح صخش : ربراک
@@ -38,10 +38,10 @@ const Page = () => {
               </p>
             </div>
             <div>
-              <h2 className="text-lg text-right font-bold text-secondary-main mb-1 sm:mb-4">
+              <h2 className="text-lg text-right font-bold text-MokhDarkBlue mb-1 sm:mb-4">
                 حساب کاربری
               </h2>
-              <p className="text-primary-text mb-12 text-right">
+              <p className="text-MokhFont1 mb-12 text-right">
                 .دشاب یم نآ یاوتحم و ونیجاگ نشیکیلپا یونعم و یدام تیکلام قوقح هیلک یاراد هک جاگ یللملا نیب تاراشتنا : جاگ
                 .ناربراک هب فلتخم قرط هب جاگ یللملا نیب تاراشتنا یشزومآ یوتحم هئارا و طابترا تهج یرازفا مرن رتسب و ونیجاگ نشیکیلپا : ونیجاگ
                 .دیامن یم مادقا تامدخ تفایرد هب تبسن ونیجاگ نشیکیلپا زا هدافتسا اب و تنرتنیا یطابترا رتسب قیرط زا هک دشاب یم یقوقح ای یقیقح صخش : ربراک
@@ -51,10 +51,10 @@ const Page = () => {
               </p>
             </div>
             <div>
-              <h2 className="text-lg text-right font-bold text-secondary-main mb-1 sm:mb-4">
+              <h2 className="text-lg text-right font-bold text-MokhDarkBlue mb-1 sm:mb-4">
                 تعاریف و اصلاحات
               </h2>
-              <p className="text-primary-text mb-12 text-right">
+              <p className="text-MokhFont1 mb-12 text-right">
                 .دشاب یم نآ یاوتحم و ونیجاگ نشیکیلپا یونعم و یدام تیکلام قوقح هیلک یاراد هک جاگ یللملا نیب تاراشتنا : جاگ
                 .ناربراک هب فلتخم قرط هب جاگ یللملا نیب تاراشتنا یشزومآ یوتحم هئارا و طابترا تهج یرازفا مرن رتسب و ونیجاگ نشیکیلپا : ونیجاگ
                 .دیامن یم مادقا تامدخ تفایرد هب تبسن ونیجاگ نشیکیلپا زا هدافتسا اب و تنرتنیا یطابترا رتسب قیرط زا هک دشاب یم یقوقح ای یقیقح صخش : ربراک

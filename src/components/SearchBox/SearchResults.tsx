@@ -56,7 +56,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
             height={24}
             className="block m-1 md:hidden"
           />
-          <p className="text-md font-semibold text-primary-textLight">مدرسین</p>
+          <p className="text-md font-semibold text-MokhFont2">مدرسین</p>
         </div>
 
         {searchResults.map((result) => (
@@ -74,10 +74,10 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
                 />
 
                 {/* Teacher Name and Subjects */}
-                <div className="flex items-center text-primary-textLight w-full">
+                <div className="flex items-center text-MokhFont2 w-full">
                   <h6 className="text-md m-1">{result.teacher}</h6>
 
-                  <div className="hidden md:block border-r-2 border-primary-textLight h-6 mx-2"></div>
+                  <div className="hidden md:block border-r-2 border-MokhFont2 h-6 mx-2"></div>
                
                   <ul className=" gap-1 w-1/3 hidden md:flex">
                     {result.subjects.map((subject, index) => (
@@ -89,7 +89,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
                         {subject}
                       </li>
                     ))}
-                    <li className="font-xs w-1/2 text-primary-textLight/60">
+                    <li className="font-xs w-1/2 text-MokhFont2/60">
                       +4مورد ...
                     </li>
                   </ul>
@@ -106,7 +106,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
               </li>
 
               {/* Location Information */}
-              <li className="hidden md:flex items-center text-primary-textLight gap-1">
+              <li className="hidden md:flex items-center text-MokhFont2 gap-1">
                 <Image
                   src={locationIcon.src}
                   width={24}
@@ -117,7 +117,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
               </li>
            
             </ul>
-            <div className="block md:hidden m-1 items-center text-primary-textLight">
+            <div className="block md:hidden m-1 items-center text-MokhFont2">
                 <ul className="flex gap-1 w-full md:w-1/3 ">
                   {result.subjects.map((subject, index) => (
                     <li
@@ -128,7 +128,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
                       {subject}
                     </li>
                   ))}
-                  <li className="font-xs w-1/2 text-primary-textLight/60">
+                  <li className="font-xs w-1/2 text-MokhFont2/60">
                     +4مورد ...
                   </li>
                 </ul>
@@ -146,7 +146,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
             height={24}
             className="block m-1 md:hidden"
           />
-          <p className="text-md font-semibold text-primary-textLight">درس ها</p>
+          <p className="text-md font-semibold text-MokhFont2">درس ها</p>
         </div>
 
         <div className="flex flex-col rounded-md p-2 mb-4">
@@ -154,7 +154,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
           {courseResult.map((course) => (
             <div
               key={course.id}
-              className="flex items-center w-full text-primary-textLight gap-2"
+              className="flex items-center w-full text-MokhFont2 gap-2"
             >
               <Image
                 src={course.icon}
@@ -166,7 +166,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
               <p className="flex items-center text-sm font-semibold">
                 {course.course}
               </p>
-              <div className="border-r-2 border-primary-textLight h-6 m-1"></div>
+              <div className="border-r-2 border-MokhFont2 h-6 m-1"></div>
               <p className="flex items-center text-sm font-semibold">
                 {course.level}
               </p>
@@ -184,13 +184,13 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
             height={24}
             className="block m-1 md:hidden"
           />
-          <p className="text-md font-semibold text-primary-textLight">
+          <p className="text-md font-semibold text-MokhFont2">
             برچسب ها
           </p>
         </div>
         <div className="flex flex-row rounded-md p-2 mb-4 ">
           {/* Tag Information */}
-          <div className="flex items-center bg-[#ECEAEF] rounded-md px-4 m-1 py-2 text-primary-textLight gap-2">
+          <div className="flex items-center bg-[#ECEAEF] rounded-md px-4 m-1 py-2 text-MokhFont2 gap-2">
             <Image
               src={tagicon}
               alt="tag Icon"
@@ -200,7 +200,7 @@ const SearchResults: React.FC<SearchResultsProps> = ({ query, city }) => {
             />
             <p className="text-sm font-semibold">شیمی</p>
           </div>
-          <div className="flex items-center bg-[#ECEAEF] rounded-md px-4 m-1 py-2 text-primary-textLight gap-2">
+          <div className="flex items-center bg-[#ECEAEF] rounded-md px-4 m-1 py-2 text-MokhFont2 gap-2">
             <Image src={tagicon} alt="tag Icon" width={16} height={16} />
             <p className="text-sm font-semibold">فیزیک</p>
           </div>

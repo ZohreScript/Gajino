@@ -23,7 +23,7 @@ const Footer = () => {
                 className="w-full h-full"
               />
             </div>
-            <p className="justify-start font-normal text-base text-justify text-primary-textLight line-clamp-5">
+            <p className="justify-start font-normal text-base text-justify text-MokhFont2 line-clamp-5">
               مخ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
               ستون و سطرآنچنان که لازم است
@@ -31,47 +31,47 @@ const Footer = () => {
           </div>
           <div className="  md:col-span-9 grid grid-cols-12 gap-2 sm:gap-4 md:gap-6 p-4">
             <div className=" col-span-12 sm:col-span-12 md:col-span-2 md:col-start-2">
-              <h6 className="text-primary-text font-bold mb-3 text-right ">
+              <h6 className="text-MokhFont1 font-bold mb-3 text-right ">
                 موضوعات
               </h6>
 
-              <ul className="grid grid-cols-2 sm:grid sm:grid-cols-2 space-y-2 text-primary-textLight text-sm font-light md:flex md:flex-col gap-y-2">
+              <ul className="grid grid-cols-2 sm:grid sm:grid-cols-2 space-y-2 text-MokhFont2 text-sm font-light md:flex md:flex-col gap-y-2">
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <IoIosArrowBack className="fill-primary-main" />
-                    <span className="hover:text-secondary-main mr-1">درسی</span>
+                    <IoIosArrowBack className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue mr-1">درسی</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <IoIosArrowBack className="fill-primary-main" />
-                    <span className="hover:text-secondary-main mr-1">زبان</span>
+                    <IoIosArrowBack className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue mr-1">زبان</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <IoIosArrowBack className="fill-primary-main" />
-                    <span className="hover:text-secondary-main mr-1">هنر</span>
+                    <IoIosArrowBack className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue mr-1">هنر</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <IoIosArrowBack className="fill-primary-main" />
-                    <span className="hover:text-secondary-main mr-1">ورزش</span>
+                    <IoIosArrowBack className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue mr-1">ورزش</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <IoIosArrowBack className="fill-primary-main" />
-                    <span className="hover:text-secondary-main mr-1">
+                    <IoIosArrowBack className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue mr-1">
                       مهارت
                     </span>
                   </Link>
                 </li>
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <IoIosArrowBack className="fill-primary-main" />
-                    <span className="hover:text-secondary-main mr-1">
+                    <IoIosArrowBack className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue mr-1">
                       تکنولوژی
                     </span>
                   </Link>
@@ -79,38 +79,38 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-span-6 sm:col-span-6 md:col-span-4 mt-6 sm:mt-4 md:mt-0">
-              <h6 className="text-primary-text font-bold mb-3 text-right ">
+              <h6 className="text-MokhFont1 font-bold mb-3 text-right ">
                 سوالات متداول
               </h6>
-              <ul className="text-primary-textLight text-[10px] sm:text-xs md:text-sm font-light flex flex-col gap-y-6">
+              <ul className="text-MokhFont2 text-[10px] sm:text-xs md:text-sm font-light flex flex-col gap-y-6">
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
-                    <GoDotFill className="fill-primary-main" />
-                    <span className="hover:text-secondary-main">
+                    <GoDotFill className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue">
                       آیا مخ لورم اپیسوم متن ساختگی است؟
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="flex items-center">
-                    <GoDotFill className="fill-primary-main" />
-                    <span className="hover:text-secondary-main">
+                    <GoDotFill className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue">
                       آیا مخ لورم اپیسوم متن ساختگی است؟
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="flex items-center">
-                    <GoDotFill className="fill-primary-main" />
-                    <span className="hover:text-secondary-main">
+                    <GoDotFill className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue">
                       آیا مخ لورم اپیسوم متن ساختگی است؟
                     </span>
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="flex items-center">
-                    <GoDotFill className="fill-primary-main" />
-                    <span className="hover:text-secondary-main">
+                    <GoDotFill className="fill-MokhBlue" />
+                    <span className="hover:text-MokhDarkBlue">
                       آیا مخ لورم اپیسوم متن ساختگی است؟
                     </span>
                   </Link>
@@ -118,16 +118,16 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-span-6  sm:col-span-6 md:col-span-5 mt-6 sm:mt-4 md:mt-0">
-              <h6 className="text-primary-text font-bold mb-3 text-right text-right ">
+              <h6 className="text-MokhFont1 font-bold mb-3 text-right text-right ">
                 تماس با ما
               </h6>
-              <ul className="text-primary-textLight text-xs sm:text-xs md:text-sm font-light flex flex-col gap-y-4">
+              <ul className="text-MokhFont2 text-xs sm:text-xs md:text-sm font-light flex flex-col gap-y-4">
                 <li className="flex items-center">
                   <Link
                     href="#"
                     className="hover:text-primary-500 flex items-center"
                   >
-                    <IoMdMail className="fill-primary-main text-lg" />
+                    <IoMdMail className="fill-MokhBlue text-lg" />
                     <span className="mr-2">info@gajino.com</span>
                   </Link>
                 </li>
@@ -136,7 +136,7 @@ const Footer = () => {
                     href="#"
                     className="hover:text-primary-500 flex items-center"
                   >
-                    <FaPhone className="fill-primary-main text-lg" />
+                    <FaPhone className="fill-MokhBlue text-lg" />
                     <span className="mr-2">021-6420</span>
                   </Link>
                 </li>
@@ -146,7 +146,7 @@ const Footer = () => {
                     className="hover:text-primary-500 flex text-right sm:text-right items-start md:items-center"
                   >
                     <FaMapMarkerAlt
-                      className="fill-primary-main"
+                      className="fill-MokhBlue"
                       style={{
                         fontSize: "20px",
                         width: "28px",

@@ -17,8 +17,8 @@ const Header = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="bg-white w-full">
-      <header className=" mx-auto flex justify-between items-center h-[3.5rem] md:h-[6.5rem] px-4 md:px-8">
+    <div className="bg-white w-full shadow-md">
+      <header className="  mx-auto flex justify-between items-center h-[3.5rem] md:h-[6.5rem] px-4 md:px-8">
         <div className="md:hidden">
           <MobileMenu />
         </div>
@@ -55,14 +55,14 @@ const Header = () => {
 
           {/* <div className="flex justify-between">
             <button
-              className="text-primary-main hidden p-2 text-sm font-semibold md:block"
+              className="text-MokhBlue hidden p-2 text-sm font-semibold md:block"
               onClick={() => {
                 openModal();
               }}
             >
               ورود/ثبت نام
             </button>
-            <button className="bg-primary-main text-sm p-2 text-white py-2 px-4 rounded-xl hidden md:block">
+            <button className="bg-MokhBlue text-sm p-2 text-white py-2 px-4 rounded-xl hidden md:block">
               معلم خصوصی شو
             </button>
             <SignUp isOpen={isModalOpen} onClose={closeModal} />

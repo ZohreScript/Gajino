@@ -27,13 +27,13 @@ const SearchBox: React.FC<SearchBoxProps> = ({
     <div className="flex flex-col md:flex-row items-center gap-y-4 md:gap-y-0">
       <div className="flex flex-col md:flex-row md:relative w-full items-center rounded-lg">
         <div className="relative w-full mb-4 md:mb-0 flex items-center">
-          <span className="absolute inset-y-0 right-3 flex items-center text-primary-main">
+          <span className="absolute inset-y-0 right-3 flex items-center text-MokhBlue">
             <Image src={pinIcon.src} width={16} height={16} alt="course name" />
           </span>
           <input
             type="text"
             placeholder="نام مدرس"
-            className="w-full pl-16 pr-8 py-2 bg-gray-100 text-right focus:outline-none focus:ring-2 focus:ring-primary-main rounded-r-md"
+            className="w-full pl-16 pr-8 py-2 bg-gray-100 text-right focus:outline-none focus:ring-2 focus:ring-MokhBlue rounded-r-md"
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
@@ -51,7 +51,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
           <input
             type="text"
             placeholder="شهر"
-            className="w-full pl-10 pr-8 py-2 bg-gray-100 text-right focus:outline-none focus:ring-2 focus:ring-primary-main rounded-l-md"
+            className="w-full pl-10 pr-8 py-2 bg-gray-100 text-right focus:outline-none focus:ring-2 focus:ring-MokhBlue rounded-l-md"
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
@@ -61,7 +61,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
       )}
       </div>
       <button
-        className="bg-primary-main text-white mr-0 md:mr-4 px-6 py-2 w-full md:w-auto rounded-md mt-2 md:mt-0"
+        className="bg-MokhBlue text-white mr-0 md:mr-4 px-6 py-2 w-full md:w-auto rounded-md mt-2 md:mt-0"
         onClick={handleSearch}
       >
         جستجو

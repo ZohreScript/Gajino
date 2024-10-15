@@ -9,8 +9,8 @@ import arrowUpIcon from "../../../public/icons/expand_more_secondary.svg";
 import arrowLeftIcon from "../../../public/icons/arrowLeftIcon.svg";
 
 const liStyle = "text-sm lg:text-lg py-1 duration-500 ";
-const liActiveStyle = `${liStyle} text-secondary-main`;
-const liHoverStyle = " hover:text-secondary-main";
+const liActiveStyle = `${liStyle} text-MokhDarkBlue`;
+const liHoverStyle = " hover:text-MokhDarkBlue";
 
 const chunkArray = (array: any[], chunkSize: number) => {
   const chunks = [];
@@ -46,12 +46,12 @@ const Menu = () => {
     <>
       {openSubMenu !== null && (
         <div
-          className="fixed  inset-0 bg-gray-700 bg-opacity-50 z-9 w-full h-full"
+          className="fixed  inset-0 bg-gray-700 bg-opacity-50 z-12 w-full h-full"
           onClick={closeMenus}
         />
       )}
 
-      <ul className="flex items-right text-lg font-medium md:gap-x-4 lg:gap-x-6 text-primary-main">
+      <ul className="flex items-right text-lg font-medium md:gap-x-4 lg:gap-x-6 text-MokhBlue">
         {Pages.map((item) => (
           <li
             key={item.id}
@@ -60,7 +60,7 @@ const Menu = () => {
             {item.subPages ? (
               <div
                 className={`flex items-center justify-between cursor-pointer ${
-                  openSubMenu === item.id ? "text-secondary-main" : "text-primary-main"
+                  openSubMenu === item.id ? "text-MokhDarkBlue" : "text-MokhBlue"
                 }`}
                 onClick={() => toggleSubMenu(item.id)}
               >
@@ -78,7 +78,7 @@ const Menu = () => {
 
             {item.subPages && (
               <div
-                className={`absolute w-4/5 h-auto container mx-auto top-[6.5rem] z-10 flex flex-col md:flex-row bg-white shadow-lg rounded-lg ${
+                className={`absolute w-4/5 h-auto container mx-auto top-[6.5rem] z-20 flex flex-col md:flex-row bg-white shadow-lg rounded-lg ${
                   openSubMenu === item.id ? "block" : "hidden"
                 }`}
               >
@@ -89,8 +89,8 @@ const Menu = () => {
                         key={subPage.id}
                         className={`cursor-pointer w-full ${
                           activeSubPageId === subPage.id
-                            ? "bg-purple-100 text-secondary-main"
-                            : "text-secondary-light hover:text-secondary-main hover:bg-purple-50"
+                            ? "bg-purple-100 text-MokhDarkBlue"
+                            : "text-MokhFont2 hover:text-MokhDarkBlue hover:bg-purple-50"
                         } p-4`}
                         onMouseEnter={() => {
                           setHoveredSubPageId(subPage.id);
@@ -130,7 +130,7 @@ const Menu = () => {
                           {subsubPagesChunk.map((subSubPage) => (
                          <li
                          key={subSubPage.id}
-                         className="flex w-full p-4 items-center cursor-pointer text-secondary-main font-light"
+                         className="flex w-full p-4 items-center cursor-pointer text-MokhDarkBlue font-light"
                        >
                          <Link  href={`/${subSubPage.url}`}>
                            <div className="flex items-center w-full">

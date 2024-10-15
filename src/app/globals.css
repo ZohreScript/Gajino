@@ -31,6 +31,7 @@
   src: url("../../public/fonts/Shabnam-Bold.ttf") format("truetype");
 }
 
+@import 'flowbite';
 
 @tailwind base;
 @tailwind components;
@@ -46,6 +47,9 @@ body{
 .grid-rtl {
   direction: ltr;
 }
+.shadow-md {
+  z-index: 8; 
+}
 .reverceRtl{
   direction: rtl;
 }
@@ -56,5 +60,31 @@ html, body {
 .custom-icon {
   stroke-width: 3px; 
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B6ADC2;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B6ADC2;
+}
 
 
+
+
+
+.your-scrollable-div {
+  direction: ltr; 
+}
+
+.your-scrollable-div > * {
+  direction: rtl; 
+}

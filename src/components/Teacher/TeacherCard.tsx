@@ -29,7 +29,7 @@ function TeacherCard({ image, rating,name, subject,comments }: TeacherCardProps)
       <h1 className="font-bold text-primary-text mt-3 text-md sm:text-sm  md:text-xl">{name}</h1>
       <p className="text-primary-text font-light gap-t-0 text-xs sm:text-sm md:text-base">{subject}</p>
    {/* Line */}
-   <div className="sm:min-w-[150px] min-w-[160px] my-2 md:min-w-[200px]  h-[2px] mx-4 bg-gradient-to-r from-transparent via-primary-main via-60% to-transparent  "></div>
+   <div className="sm:min-w-[150px] min-w-[160px] my-2 md:min-w-[200px]  h-[2px] mx-4 bg-gradient-to-r from-transparent via-MokhBlue via-60% to-transparent  "></div>
 
 
 {/* Inline star and comments */}
@@ -45,7 +45,7 @@ function TeacherCard({ image, rating,name, subject,comments }: TeacherCardProps)
 
 {/* Forward arrow */}
 <Link href="#" className="mt-4">
-  <IoIosArrowForward className="text-primary-main mx-auto text-xl" />
+  <IoIosArrowForward className="text-MokhBlue mx-auto text-xl" />
 </Link>
     </div>
 

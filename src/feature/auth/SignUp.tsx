@@ -96,10 +96,10 @@ const SignUp: React.FC<SignUpProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <h2 className="text-center px-4 text-primary-text text-xl font-semibold mb-4">
+            <h2 className="text-center px-4 text-MokhFont1 text-xl font-semibold mb-4">
               ورود/ثبت نام
             </h2>
-            <p className="text-center px-2 mx-4 text-primary-text text-base mb-6">
+            <p className="text-center px-2 mx-4 text-MokhFont1 text-base mb-6">
               برای شروع شماره موبایل خود را وارد کنید:
             </p>
 
@@ -128,14 +128,14 @@ const SignUp: React.FC<SignUpProps> = ({ isOpen, onClose }) => {
               type="submit"
               className={`w-full py-3 rounded-2xl transition ${
                 errors.mobile
-                  ? "bg-primary-main opacity-50 text-white"
-                  : "bg-primary-main text-white hover:bg-teal-600"
+                  ? "bg-MokhBlue opacity-50 text-white"
+                  : "bg-MokhBlue text-white hover:bg-MokhBlue"
               }`}
             >
               تایید
             </button>
 
-            <div className="flex justify-center text-primary-main items-center mt-4">
+            <div className="flex justify-center text-MokhBlue items-center mt-4">
               <Link href="#" className="text-sm">
                 شرایط و قوانین
               </Link>
@@ -159,10 +159,10 @@ const SignUp: React.FC<SignUpProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <h2 className="text-center px-4 text-primary-text text-xl font-semibold mb-4">
+            <h2 className="text-center px-4 text-MokhFont1 text-xl font-semibold mb-4">
               کد تایید
             </h2>
-            <p className="text-center  w-full  text-primary-text text-sm md:text-base  mb-6 ">
+            <p className="text-center  w-full  text-MokhFont1 text-sm md:text-base  mb-6 ">
               کد 5 رقمی ارسال شده به شماره{" "}
               <strong className="mx-1 ">{phoneNumber}</strong>
               را در کادر زیر وارد نمایید:
@@ -189,28 +189,28 @@ const SignUp: React.FC<SignUpProps> = ({ isOpen, onClose }) => {
               </div>
 
               {time > 0 ? (
-                <p className="text-center  w-full px-4 mx-auto text-primary-text text-sm  mb-6 ">
+                <p className="text-center  w-full px-4 mx-auto text-MokhFont1 text-sm  mb-6 ">
                   ارسال مجدد کد بعد از
                   <strong className="mr-1">{time}ثانیه</strong>
                 </p>
               ) : (
                 <button
-                  className="text-center  w-full px-4 mx-auto text-primary-main font-bold text-sm  mb-6 "
+                  className="text-center  w-full px-4 mx-auto text-MokhBlue font-bold text-sm  mb-6 "
                   onClick={handleResendOtp}
                 >
                   ارسال مجدد کد
                 </button>
               )}
-              <p className="text-center  w-full text-primary-text text-sm  mb-6 ">
+              <p className="text-center  w-full text-MokhFont1 text-sm  mb-6 ">
                 آیا میخواهید شماره موبایل تغییر دهید؟
-                <strong className="mr-1 text-primary-main">
+                <strong className="mr-1 text-MokhBlue">
                   تغییر شماره موبایل
                 </strong>
               </p>
               {/* Submit Button */}
               <button
     type="submit"
-    className={`w-full text-white bg-primary-main py-3 rounded-2xl transition ${
+    className={`w-full text-white bg-MokhBlue py-3 rounded-2xl transition ${
       otp.length === 5 ? "opacity-100 hover:bg-teal-600" : "opacity-50"
     }`}
     disabled={otp.length !== 5}
