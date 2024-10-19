@@ -268,7 +268,7 @@ export default function UserPay() {
         ))}
       </div>
 
-      {/* Tab Content with Background */}
+      {/* Tab Content  */}
       <div className="container mx-auto  p-4">
         {activeTab === 1 && <div>محتوای تب ۱</div>}
         {activeTab === 2 && <div>محتوای تب ۲</div>}
@@ -276,7 +276,7 @@ export default function UserPay() {
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6">
             {/* detailcourse col */}
             <div className="relative h-auto w-full">
-              <div className=" h-screen bg-white shadow-[0_5px_15px_rgba(0,0,0,0.20)] border border-t-MokhFont3/5 flex flex-col rounded-xl p-4">
+              <div className=" h-screen bg-white shadow-custom border border-t-MokhFont3/5 flex flex-col rounded-xl p-4">
                 <h1 className="text-lg text-MokhDarkBlue border-b pb-2 border-b-MokhFont3/30 font-bold mb-6">
                   کلاس های انتخابی
                 </h1>
@@ -303,7 +303,7 @@ export default function UserPay() {
 
             {/* pay col */}
             <div
-              className="h-auto  bg-white shadow-[0_5px_15px_rgba(0,0,0,0.20)]
+              className="h-auto  bg-white shadow-custom
                 border border-t-MokhFont3/5 flex flex-col rounded-xl p-4"
             >
               <h1 className="text-lg text-MokhDarkBlue border-b pb-2 border-b-MokhFont3/30 font-bold mb-6">
@@ -390,6 +390,7 @@ export default function UserPay() {
               {/* Payment Options (Logos) */}
               <div className="flex flex-row justify-between  mb-4">
                 {banks.map((bank) => (
+                  // eslint-disable-next-line react/jsx-key
                   <div className="relative">
                     <input
                       id="maim-radio"

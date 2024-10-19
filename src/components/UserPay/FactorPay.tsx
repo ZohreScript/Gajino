@@ -30,7 +30,7 @@ const FactorPay = () => {
       className=" container mx-auto  items-center
      justify-center flex flex-col"
     >
-      <div className="w-full min-h-screen  shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-white rounded-lg  p-8">
+      <div className="w-full min-h-screen  shadow-custom bg-white rounded-lg  p-8">
         {/* Header Section */}
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-lg font-bold text-MokhDarkBlue  flex items-center">

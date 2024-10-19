@@ -6,7 +6,7 @@ import paysuccess from "../../../public/icons/pay successful.svg"
 const PaymentSuccess = () => {
   return (
     <div className="flex justify-center  mx-auto container items-center h-screen ">
-      <div className="bg-white w-full  md:w-1/3 p-8 m-4 rounded-lg shadow-[0_5px_15px_rgba(0,0,0,0.20)] text-center">
+      <div className="bg-white w-full  md:w-1/3 p-8 m-4 rounded-lg shadow-custom text-center">
         <div className="flex justify-center items-center mb-4">
        <Image src={paysuccess} alt="success"   width={100}
       height={100}/>
