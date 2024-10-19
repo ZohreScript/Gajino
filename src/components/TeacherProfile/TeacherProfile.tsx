@@ -15,6 +15,7 @@ import commenticond from "../../../public/icons/commentsd.svg";
 import { useState } from "react";
 import AboutTeacher from "./AboutTeacher";
 import ResumeTimeline from "./ResumeTimeline";
+import VideoGallery from "./VideoGallery";
 
 interface Tab {
   name: string;
@@ -190,7 +191,7 @@ const TeacherProfile = () => {
               {activeTab === 2 && <div>
                 <ResumeTimeline/>
                   </div>}
-              {activeTab === 3 && <div>محتوای تب ۳</div>}
+              {activeTab === 3 && <div><VideoGallery/>  </div>}
               {activeTab === 4 && <div>محتوای تب ۴</div>}
             </div>
           </div>

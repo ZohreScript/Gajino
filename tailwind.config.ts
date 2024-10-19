@@ -189,6 +189,8 @@ const config: Config = {
       boxShadow: {
         custom: '0 5px 15px rgba(0, 0, 0, 0.12)', 
       },
+      blur: {
+        xs: '2px',}
     },
   },
   plugins: [

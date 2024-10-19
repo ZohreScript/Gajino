@@ -65,7 +65,7 @@ const TimelineSection: React.FC<{
     {showVerticalLine && (
       <div className="absolute  right-6 top-10 w-[2px] h-full bg-MokhDarkBlue"></div>
     )}
-    <ul className="pl-2 pr-2 space-y-4 mt-4 ">
+    <ul className=" pr-2 space-y-4 mt-4 ">
       {items.map((item, index) => (
         <li key={index} className="flex items-start space-x-4">
           <div className="flex flex-col md:flex-row md:items-center justify-start text-right pr-8 w-full md:space-x-4">
@@ -88,7 +88,7 @@ const TimelineSection: React.FC<{
 
 const ResumeTimeline: React.FC = () => {
   return (
-    <div className="relative w-full px-5 py-10">
+    <div className="relative w-full px-5 py-2">
       {/* Timeline Sections */}
       <div className="relative">
         <TimelineSection
