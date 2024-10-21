@@ -5,7 +5,10 @@ import { IoIosArrowBack } from "react-icons/io";
 
 const Breadcrumb: React.FC = () => {
   return (
-    <nav className="flex text-gray-600 text-sm mb-4 py-4 px-2" aria-label="Breadcrumb">
+    <nav
+      className="flex text-gray-600 text-sm mb-4 py-4 px-2"
+      aria-label="Breadcrumb"
+    >
       <ol className="inline-flex items-center space-x-1">
         <li className="inline-flex items-center justify-center m-1">
           <Link href="/" className="text-MokhFont2">

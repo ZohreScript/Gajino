@@ -16,6 +16,8 @@ import { useState } from "react";
 import AboutTeacher from "./AboutTeacher";
 import ResumeTimeline from "./ResumeTimeline";
 import VideoGallery from "./VideoGallery";
+import ReviewsList from "./ReviewsList";
+import ScheduleClass from "./ScheduleClass";
 
 interface Tab {
   name: string;
@@ -138,7 +140,7 @@ const TeacherProfile = () => {
   return (
     <>
       <BannerSlider />
-      <div className=" bg-white container mx-auto m-8 rounded-lg shadow-custom">
+      <div className=" bg-white container mx-auto m-8 rounded-2xl shadow-custom">
         <TeacherProfileSummary
           firstName={teacherData.firstName}
           lastName={teacherData.lastName}
@@ -160,7 +162,7 @@ const TeacherProfile = () => {
               {tabs.map((tab, index) => (
                 <div className="flex items-center" key={index}>
                   <button
-                    className={`px-4 py-2 flex flex-col md:flex-row items-center rounded-lg transition-colors duration-200 ${
+                    className={`px-2 gap-1  py-2 flex flex-col  md:flex-row items-center rounded-lg transition-colors duration-200 ${
                       activeTab === index + 1
                         ? "bg-white text-MokhFont1 shadow-custom"
                         : "text-MokhFont2 hover:bg-white"
@@ -170,7 +172,7 @@ const TeacherProfile = () => {
                     <div>
                       {activeTab === index + 1 ? tab.icon : tab.inactiveIcon}
                     </div>
-                    <div className="mt-1 md:mt-0 text-xs md:text-balance ">
+                    <div className="mt-1 md:mt-0 md:text-sm text-xs md:text-balance ">
                       {tab.name}
                     </div>
                   </button>
@@ -192,11 +194,12 @@ const TeacherProfile = () => {
                 <ResumeTimeline/>
                   </div>}
               {activeTab === 3 && <div><VideoGallery/>  </div>}
-              {activeTab === 4 && <div>محتوای تب ۴</div>}
+              {activeTab === 4 && <div><ReviewsList/> </div>}
             </div>
           </div>
         </div>
       </div>
+       <ScheduleClass/>
     </>
   );
 };

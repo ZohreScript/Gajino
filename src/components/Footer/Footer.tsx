@@ -63,9 +63,7 @@ const Footer = () => {
                 <li className="flex items-center">
                   <Link href="#" className="flex items-center">
                     <IoIosArrowBack className="fill-MokhBlue" />
-                    <span className="hover:text-MokhDarkBlue mr-1">
-                      مهارت
-                    </span>
+                    <span className="hover:text-MokhDarkBlue mr-1">مهارت</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
@@ -165,8 +163,6 @@ const Footer = () => {
         </div>
 
         <Footerlogos />
-
-
       </div>
     </footer>
   );
