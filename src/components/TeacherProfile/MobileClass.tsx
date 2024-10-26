@@ -39,11 +39,11 @@ const MobileClass = () => {
 
     // محاسبه موقعیت کلاس‌ها
     const getClassPosition = (startTime: number) => {
-        return (startTime - 8) *7.85; // هر ساعت 8.33% از ارتفاع کل است
+        return (startTime - 8) *7.95; // هر ساعت 8.33% از ارتفاع کل است
     };
 
     const getClassHeight = (startTime: number, endTime: number) => {
-        let result_height = ((endTime - startTime) *7.85);
+        let result_height = ((endTime - startTime) *7.95);
         return result_height; // هر ساعت 8.33% ارتفاع می‌گیرد
     };
 
@@ -53,7 +53,7 @@ const MobileClass = () => {
             <div className="block col-span-2 p-2 relative">
                 {Array.from({ length: 13 }, (_, index) => (
                  <>
-                 <div key={index} className="text-right  text-lg pb-8 relative">
+                 <div key={index} className="text-right  text-sm text-MokhFont2 pb-8 relative">
                         {index + 8}:00
                         <div className="absolute bottom-3 w-8 items-center border-b   border-gray-300 "></div>
                     </div>
@@ -73,14 +73,14 @@ const MobileClass = () => {
                             height: `${getClassHeight(classItem.startTime, classItem.endTime)}%`,
                         }}
                     >
-                        <button className="absolute top-3 left-2 bg-cyan-500 w-8 h-8 rounded-full flex items-center leading-none justify-center text-white text-xl font-bold">
+                        <button className="absolute top-2 left-2 bg-cyan-500 w-6 h-6 pt-0.5  rounded-full flex items-center leading-none justify-center text-white text-xl font-bold">
                             +
                         </button>
-                        <div className="text-right text-MokhDarkBlue text-lg font-semibold mb-2">
+                        <div className="text-right text-MokhDarkBlue text-base font-semibold mb-2">
                             {`${classItem.startTime}:00 - ${classItem.endTime}:00`}
                         </div>
                         <div className="text-right text-MokhDarkBlue flex items-center justify-between gap-6">
-                            <p className="text-base font-bold">{classItem.title}</p>
+                            <p className="text-sm ">{classItem.title}</p>
                             <p className="text-sm  text-MokhFont2 text-justify">{classItem.grade}</p>
                         </div>
                         <div className="flex justify-start mt-2">

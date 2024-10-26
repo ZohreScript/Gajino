@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/TeacherProfile/WeekPickerWithNavigation.tsx"],
+  "include": ["video.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/TeacherProfile/WeekPickerWithNavigation.tsx"],
   "exclude": ["node_modules"]
 }

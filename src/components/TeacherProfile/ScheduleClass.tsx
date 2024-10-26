@@ -12,6 +12,7 @@ import ClassSelectionModal from "./ClassSelectionModal";
 import SuccessModal from "./SuccssesModal";
 import WeekPickerWithNavigation from "./WeekPickerWithNavigation";
 import MobileClass from "./MobileClass";
+import TeacherSlider from "./TeacherSlider";
 
 interface ClassSchedule {
   time: string;
@@ -115,7 +116,7 @@ const ScheduleClass = () => {
             <div className="grid grid-cols-7 border-b-2 border-gray-200">
               {/* کلاس اول */}
               <div className="col-start-1  col-span-1 ">
-                <div className="bg-MokhYellow bg-opacity-20 border-t-8 border-t-MokhYellow rounded-lg  p-6 relative">
+                <div className="bg-MokhYellow w-40 bg-opacity-20 border-t-8 border-t-MokhYellow rounded-lg  p-6 relative">
                   <>
                     <button
                       onClick={openClassModal}
@@ -203,7 +204,7 @@ const ScheduleClass = () => {
             <div className="grid grid-cols-7  border-b-2 border-gray-200">
               {/* کلاس دوم */}
               <div className="col-start-6  col-span-1">
-                <div className="bg-blue-600 bg-opacity-20 border-t-8 border-t-blue-600 rounded-lg  p-6 relative">
+                <div className="bg-blue-600 w-40 bg-opacity-20 border-t-8 border-t-blue-600 rounded-lg  p-6 relative">
                   <>
                     <div
                       onClick={openClassModal}
@@ -292,7 +293,7 @@ const ScheduleClass = () => {
             <div className="grid grid-cols-7  border-b-2 border-gray-200">
               {/* کلاس سوم */}
               <div className="col-start-4  col-span-1">
-                <div className="bg-green-600 bg-opacity-20 border-t-8 border-t-green-600 rounded-lg  p-6 relative">
+                <div className="bg-green-600 w-40 bg-opacity-20 border-t-8 border-t-green-600 rounded-lg  p-6 relative">
                   <div className="absolute top-3 left-2 bg-cyan-500 w-8 h-8 rounded-full flex items-center leading-none pt-1 justify-center text-white text-xl font-bold">
                     +
                   </div>

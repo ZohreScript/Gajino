@@ -18,12 +18,70 @@ import ResumeTimeline from "./ResumeTimeline";
 import VideoGallery from "./VideoGallery";
 import ReviewsList from "./ReviewsList";
 import ScheduleClass from "./ScheduleClass";
-
+import Teacher from "../Teacher/Teacher";
+import teacher12 from "../../../public/images/teacher (1).png";
+import teacher2 from "../../../public/images/teacher (2).png";
+import teacher3 from "../../../public/images/teacher (3).png";
+import teacher4 from "../../../public/images/teacher (4).png";
+import TeacherSlider from "./TeacherSlider";
+import BannerVideo from "./BannerVideo";
 interface Tab {
   name: string;
   icon: React.ReactNode;
   inactiveIcon: React.ReactNode;
 }
+
+const TeacherCardData = [
+  {
+    id: 1,
+    name: "مینا جعفری زاده همدانی",
+    subject: "زبان انگلیسی",
+    rating: "4/2",
+    image: teacher3,
+    comments: "586",
+  },
+  {
+    id: 2,
+    name: "علیرضا محمدیان",
+    subject: "زبان آلمانی",
+    rating: "4/2",
+    image: teacher2,
+    comments: "586",
+  },
+  {
+    id: 3,
+    name: "بهرام موسوی راد",
+    subject: "ادبیات فارسی",
+    rating: "4/4",
+    image: teacher12,
+    comments: "586",
+  },
+  {
+    id: 4,
+    name: "پژمان نوری",
+    subject: "بستکتبال",
+    rating: "4/4",
+    image: teacher4,
+    comments: "586",
+  },
+  {
+    id: 5,
+    name: "علیرضا محمدیان",
+    subject: "زبان آلمانی",
+    rating: "4/4",
+    image: teacher2,
+    comments: "586",
+  },
+  {
+    id: 6,
+    name: "بهرام موسوی راد",
+    subject: "ادبیات فارسی",
+    rating: "4/4",
+    image: teacher1,
+    comments: "586",
+  },
+];
+
 const tabs: Tab[] = [
   {
     name: "درباره کلاس ها ",
@@ -139,7 +197,7 @@ const TeacherProfile = () => {
 
   return (
     <>
-      <BannerSlider />
+      <BannerVideo />
       <div className=" bg-white container mx-auto m-8 rounded-2xl shadow-custom">
         <TeacherProfileSummary
           firstName={teacherData.firstName}
@@ -190,16 +248,34 @@ const TeacherProfile = () => {
                   <AboutTeacher />
                 </div>
               )}
-              {activeTab === 2 && <div>
-                <ResumeTimeline/>
-                  </div>}
-              {activeTab === 3 && <div><VideoGallery/>  </div>}
-              {activeTab === 4 && <div><ReviewsList/> </div>}
+              {activeTab === 2 && (
+                <div>
+                  <ResumeTimeline />
+                </div>
+              )}
+              {activeTab === 3 && (
+                <div>
+                  <VideoGallery />{" "}
+                </div>
+              )}
+              {activeTab === 4 && (
+                <div>
+                  <ReviewsList />{" "}
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
-       <ScheduleClass/>
+      <ScheduleClass />
+      {/* Slider Section */}
+      <div className="container mx-auto block my-9 items-center justify-center">
+      <h2 className="font-bold text-MokhDarkBlue block text-center justify-center items-center text-heading-2 mb-6">
+             مدرسین مشابه
+          </h2>
+
+        <TeacherSlider teacherCardData={TeacherCardData} />
+      </div>
     </>
   );
 };
