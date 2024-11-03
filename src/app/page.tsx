@@ -15,6 +15,7 @@ export default function Home() {
           <Course />
           <Teacher />
         </div>
+        
       </div>
     </>
   );
